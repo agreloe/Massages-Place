@@ -90,5 +90,10 @@
         "button": "Send",
         "location": "We are located in",
         "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+    },
+    "modal": {
+        "title": "Thank you for contacting us.",
+        "description": "We will get back to you as soon as possible.",
+        "description2": "You can contact us through"
     }
 }
