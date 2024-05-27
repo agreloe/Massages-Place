@@ -1,0 +1,313 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables.module.scss';
+
+@font-face {
+  font-family: "Cotta";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Cotta\ Free.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "New Reason";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/NewReasonTRIAL-Regular.otf") format("opentype"), url("../assets/fonts/NewReasonTRIAL-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $text-color;
+  background: $bg-color;
+  word-break: break-word;
+  overflow-x: hidden;
+  font-family: $secondary-font;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  overflow: hidden;
+}
+
+ul {
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  list-style: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $primary-font;
+  color: $text-color;
+  font-weight: normal;
+}
+
+
+h1 {
+  font-size: $header1;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4 {
+  font-size: $header4;
+}
+
+p {
+  color: $text-color;
+}
+
+input,
+textarea {
+  appearance: none;
+  outline: 0;
+  background: transparent;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+button, input[type="button"], input[type="submit"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*
+Utils
+*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/*
+BG
+*/
+
+.blur {
+  position: absolute;
+  bottom: -6rem;
+  right: -6rem;
+  z-index: -1;
+}
+
+.blur-bottom {
+  position: absolute;
+  top: -6rem;
+  left: -6rem;
+  z-index: -1;
+}
+
+/*
+Google Reviews
+*/
+.starRating {
+  --star-size: 1.5rem;
+  display: inline-block;
+  font-size: var(--star-size);
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+}
+
+.starRating::before {
+  content: '\2605 \2605 \2605 \2605 \2605';
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, $primary-color calc(var(--rating, 0) * 20%), $border-color calc(var(--rating, 0) * 20%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*
+Video Component
+*/
+
+
+
+.arc-wrapper {
+  outline: 1px solid $text-color;
+  outline-offset: 1rem;
+  border-radius: 300px 300px 0 0;
+  -webkit-border-radius: 300px 300px 0 0;
+  -moz-border-radius: 300px 300px 0 0;
+  -ms-border-radius: 300px 300px 0 0;
+  -o-border-radius: 300px 300px 0 0;
+  position: relative;
+  width: fit-content;
+}
+
+.arc-wrapper::after {
+  content: '\2726';
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $text-color;
+}
+
+.arc-full,
+.arc {
+  position: relative;
+  overflow: hidden;
+  border-radius: 300px 300px 0 0;
+  -webkit-border-radius: 300px 300px 0 0;
+  -moz-border-radius: 300px 300px 0 0;
+  -ms-border-radius: 300px 300px 0 0;
+  -o-border-radius: 300px 300px 0 0;
+}
+
+.arc, .arc-full {
+  width: 400px;
+  height: 500px;
+
+}
+
+.arc-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+}
+
+
+.header-style {
+  background-color: $bg-color;
+  z-index: 100;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  /*
+  BG
+  */
+  .blur {
+    bottom: 3rem;
+    right: -16rem;
+  }
+
+  .blur-bottom {
+    top: -6rem;
+    left: -16rem;
+  }
+  /*
+  Video Component
+  */
+  .arc {
+    width: 100%;
+    height: 400px;
+  }
+
+  .arc-full {
+    height: 300px;
+    width: 100%;
+  }
+
+  .arc-wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+#modal {
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+

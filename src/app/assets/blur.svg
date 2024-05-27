@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="blur" data-name="Blur" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2050 1676">
+  <defs>
+    <filter id="uuid-06e7da5b-59e1-4fd0-b054-ecb874e11bd4" data-name="AI_DesenfoqueGaussiano_200">
+      <feGaussianBlur stdDeviation="200"/>
+    </filter>
+  </defs>
+  <g style="filter: url(#uuid-06e7da5b-59e1-4fd0-b054-ecb874e11bd4); opacity: .25;">
+    <ellipse cx="1024.8" cy="838.2" rx="854" ry="698.5" style="fill: #deacaa; stroke-width: 0px;"/>
+  </g>
+</svg>
