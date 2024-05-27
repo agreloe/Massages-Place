@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import '@/app/styles/globals.scss'
 import Header from '@/app/components/Header';
 import Footer from "@/app/components/Footer";
-
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
 
 // eslint-disable-next-line
 const littleCat = `%c \/\\_\/\\\r\n( o.o )\r\n > ^ <`
@@ -15,17 +16,26 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function RootLayout({
+
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params: {locale}
+}: {
   children: React.ReactNode;
-}>) {
+  params: {locale: string};
+}) {
+
+  const messages = await getMessages();
+
   return (
-    <html lang='es'>
+    <html lang={locale}>
       <body className="relative">
-        <Header />
+      <NextIntlClientProvider messages={messages}>
+      <Header />
         {children}
         <Footer />
+        </NextIntlClientProvider>
+
       </body>
     </html>
   );

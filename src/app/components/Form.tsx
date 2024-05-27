@@ -1,8 +1,10 @@
 // components/Form/Form.tsx
 import React, { useState } from 'react';
 import axios from 'axios';
+import {useTranslations} from 'next-intl';
 
 const Form: React.FC = () => {
+  const t = useTranslations("contact");
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -53,7 +55,7 @@ const Form: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
       <div className='flex flex-col gap-2 relative'>
-        <label htmlFor="name">Nombre</label>
+        <label htmlFor="name">{t('formName')}</label>
         <input
         className="border-b border-text_color"
           type="text"
@@ -67,7 +69,7 @@ const Form: React.FC = () => {
         <span className={`h-[1px] bg-primary absolute bottom-0 left-0 right-0transition-all duration-200 ease-in-expo ${focusName ? "w-full" : "w-0"}`}></span>
       </div>
       <div className='flex flex-col gap-2 relative'>
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">{t('formEmail')}</label>
         <input
         className="border-b border-text_color"
           type="email"
@@ -81,7 +83,7 @@ const Form: React.FC = () => {
         <span className={`h-[1px] bg-primary absolute bottom-0 left-0 transition-all duration-200 ease-in-expo z-50 ${focusEmail ? "w-full" : "w-0"}`}></span>
       </div>
       <div className='flex flex-col gap-2 relative'>
-        <label htmlFor="message">Mensaje</label>
+        <label htmlFor="message">{t('formMessage')}</label>
         <textarea
         className="border-b border-text_color"
           id="message"
@@ -90,11 +92,11 @@ const Form: React.FC = () => {
           required
           onFocus={() => setFocusMsg(true)}
           onBlur={() => setFocusMsg(false)}
-          placeholder='Por favor detallle en que fecha y horario le gustaria agendar una cita.'
+          placeholder={t('formPlaceholder')}
         ></textarea>
         <span className={`h-[1px] bg-primary absolute bottom-0 left-0 transition-all duration-200 ease-in-expo z-50 ${focusMsg ? "w-full" : "w-0"}`}></span>
       </div>
-      <button className='mt-8 lg:ml-auto p-2 px-6 border border-solid border-text_color outline outline-transparent hover:outline-text_color hover:outline-offset-4 w-fit outline-1 transition-all ease-in-expo' type="submit">Enviar</button>
+      <button className='mt-8 lg:ml-auto p-2 px-6 border border-solid border-text_color outline outline-transparent hover:outline-text_color hover:outline-offset-4 w-fit outline-1 transition-all ease-in-expo' type="submit">{t('button')}</button>
     </form>
   );
 };

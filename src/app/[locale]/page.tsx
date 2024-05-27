@@ -9,11 +9,12 @@ import Masajes from '@/app/components/Masajes';
 import Espacio from '@/app/components/Espacio';
 import { gsap, Expo } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import {useTranslations} from 'next-intl';
 
 
 // @ts-ignore
 const Home: React.FC = () => {
-
+  const t = useTranslations("modal");
 
   const placeId = 'ChIJVXBlRCL_Lg0RcX3RduvqmlU';
 
@@ -83,9 +84,9 @@ const Home: React.FC = () => {
             <span className='text-[2.5rem]'>&#215;</span>
             <span className="sr-only">Cerrar</span>
           </button>
-          <p className='text-h5'>Muchas gracias por contactarnos.</p>
-          <p>Le contactaremos a la brevedad.</p>
-          <p>También puedes contactarnos a través de <a className='underline' href='https://api.whatsapp.com/send/?phone=34691771284&text=Hola%2C+quisiera+pedir+una+cita+para+un+masaje&type=phone_number&app_absent=0' target='_blank' rel="noopener noreferrer">WhatsApp</a></p>
+          <p className='text-h5'>{t('title')}</p>
+          <p>{t('description')}</p>
+          <p>{t('description2')}{" "}<a className='underline' href='https://api.whatsapp.com/send/?phone=34691771284&text=Hola%2C+quisiera+pedir+una+cita+para+un+masaje&type=phone_number&app_absent=0' target='_blank' rel="noopener noreferrer">WhatsApp</a></p>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import Carousel from '@/app/components/Carousel';
 import { gsap, Expo } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import {useTranslations} from 'next-intl';
 
 interface Review {
   author_name: string;
@@ -16,7 +17,9 @@ interface ReviewsProps {
   placeId: string;
 }
 
-const Reviews: React.FC<ReviewsProps> = ({ placeId }) => {
+const Reviews: React.FC<ReviewsProps> = ({
+  placeId }) => {
+    const t = useTranslations('reviews');
   const reviewsRef = useRef<HTMLInputElement>(null)
   const q = gsap.utils.selector(reviewsRef);
   const tl = useRef()
@@ -66,7 +69,7 @@ const Reviews: React.FC<ReviewsProps> = ({ placeId }) => {
   return (
     <div ref={reviewsRef} className="py-16 sm:px-8 sm:min-h-[650px] min-h-[475px]">
       <div className="content">
-        <h2 className='pb-8 text-center'>Opiniones de nuestros clientes</h2>
+        <h2 className='pb-8 text-center'>{t('title')}</h2>
         <Carousel reviews={reviews}></Carousel>
       </div>
     </div>

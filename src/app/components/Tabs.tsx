@@ -4,7 +4,7 @@ import Image, { StaticImageData } from 'next/image';
 import ScrollToButton from '@/app/components/ScrollToButton';
 import { gsap, Expo } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import {useTranslations} from 'next-intl';
 
 interface Tab {
   title: string;
@@ -21,6 +21,7 @@ interface TabsProps {
 }
 
 const Tabs: React.FC<TabsProps> = ({ tabs }) => {
+  const t = useTranslations('massages');
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   const tabsRef = useRef<HTMLInputElement>(null)
@@ -95,10 +96,10 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
 
           <p className={`py-4 ${styles.tabs__text}`}>{tabs[activeTabIndex].content.text}</p>
 
-          <div className='pb-8 font-bold'>
-              <p>{`Duración: ${tabs[activeTabIndex].content.time}`}</p>
+          <div className='pb-8 font-bold text-md flex gap-4'>
+              <p className='px-4 py-2 border border-solid border-text_color rounded-full'>{`${tabs[activeTabIndex].content.time}`}</p>
 
-              <p>{`Precio: ${tabs[activeTabIndex].content.price}`}</p>
+              <p className='px-4 py-2 border border-solid border-text_color rounded-full'>{`${tabs[activeTabIndex].content.price}`}</p>
           </div>
         </div>
 

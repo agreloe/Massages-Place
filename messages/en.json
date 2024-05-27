@@ -1,0 +1,94 @@
+{
+    "videoComponent": {
+        "title": "Compostela Massages",
+        "description": "Your oasis of relaxation and well-being. The ideal destination for your rest and rejuvenation."
+    },
+    "header": {
+        "massages": "Massages",
+        "space": "Our Space",
+        "contact": "Contact",
+        "switchLocale": "ES"
+    },
+    "massages": {
+        "title": "Our Massages",
+        "compostela": {
+            "title": "Compostela Massage",
+            "description": "Eliminate swelling, improve the circulation in your legs and refresh yourself. The compostela massage is a complete decontracting massage, where you will receive a unique treatment of tired legs, reflexology or cold bandages. The massage also includes rosemary essence, vital for your legs. Finally we will finish with an aloe vera mask.",
+            "time": "90 minutes",
+            "price": "80€"
+        },
+        "deluxe": {
+            "title": "Deluxe Massage",
+            "description": "The deluxe massage is a therapy designed to improve the well-being of the person as its main objective is to increase the production of endorphins in our body, accompanied by an aromatherapy ritual with lavender essential oil. You will enjoy a shoulder and head massage, accompanied by lavender essential oil and a facial treatment, deeply moisturising the skin of your face and neck.",
+            "time": "90 minutes",
+            "price": "80€"
+        },
+        "regenerative": {
+            "title": "Regenerative Massage",
+            "description": "This massage aims to relieve muscle tension, improve blood circulation, stimulate the immune system and promote the recovery of damaged tissues. It is a massage that combines gentle and deep techniques, pressure, kneading, rubbing and specific movements on the skin, in order to relax the body and mind.",
+            "time": "40 minutes",
+            "price": "30€"
+        },
+        "decontracturant": {
+            "title": "Decontracturant Massage",
+            "description": "Experience immediate relief from the stress and tension built up in your body with our decontracting massage. Using specialised techniques, we will work on muscle tension points, releasing knots and restoring flexibility and balance to your body. This massage is ideal for those seeking relief from muscle aches and stiffness.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "deep": {
+            "title": "Deep Massage",
+            "description": "Back massage, neck massage and shoulder massage. This firm pressure massage focuses on muscle tension and tightness. The deep massage is a massage along the entire back, focused on people who spend several hours a day sitting and who have adopted bad postural habits. Relax your lower back, neck, head and shoulders with our deep massage.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "quiropractic": {
+            "title": "Quiropratic Massage",
+            "description": "Experience immediate relief from stress and accumulated tension in your body with our chiropractic massage. This is a decontracting massage that consists of eliminating the contractures that we cause when we carry out our daily activities, with stress or tension. Whatever the cause of the contracture, it is necessary to eliminate it because it creates a structural decompensation.",
+            "time": "60 minutes",
+            "price": "55€"
+        },
+        "tiredLegs": {
+            "title": "Tired Legs Massage",
+            "description": "We will start with a massage on the whole leg, we will work with gentle pressure, with little drainage, emptying, then we will accompany it with a special summer ritual, with an essential oil. The chemotyped essential oil of Rosemary is the oil of the mind. Used in ancient Greece, with analgesic properties, muscle relaxants, draining and activating the circulation, finally we will make a bandage on the entire leg with a cold effect.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "relaxing": {
+            "title": "Relaxing Massage",
+            "description": "Experience immediate relief from the stress and tension built up in your body with our relaxing massage. Using specialised techniques, we will work on muscle tension points, releasing knots and restoring flexibility and balance to your body. This massage is ideal for those seeking relief from muscle tension.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "aromatheraphy": {
+            "title": "Aromatheraphy",
+            "description": "Whether you wish to reduce stress, relieve muscle aches, improve sleep quality or simply pamper yourself, our aromatherapy massage will provide you with a holistic and personalised experience. Let us take you on a journey of relaxation and healing, where aromas and the expert hands of our therapist come together to provide you with an unforgettable experience of wellness and rejuvenation.",
+            "time": "60 minutes",
+            "price": "60€"
+        }
+    },
+    "space": {
+        "title": "Our Space",
+        "description": "We are located at República do Salvador nº6, in the centre of Santiago de Compostela, in the Cowork+ centre. A spacious coworking which has an area of more than 300m2, and an area dedicated exclusively to relaxation.",
+        "description2": "At Compostela Massages we offer a wide variety and typology of massages adapted to your needs. Our specialities are: relaxing, therapeutic, descontracturantes massages and aesthetic treatments. We are committed to using leading brands from our immediate surroundings.",
+        "button": "Book your appointment"
+    },
+    "reviews": {
+        "title": "Our client reviews",
+        "button": "Read more"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "disclaimer": "Important information",
+        "disclaimerText": "By appointment only. Make an appointment using the form below or you can reach us through",
+        "wsapp": "Whatsapp",
+        "email": "email",
+        "phone": "phone",
+        "formName": "Name",
+        "formEmail": "Email",
+        "formMessage": "Message",
+        "formPlaceholder": "Please give details of the date and time you would like to make an appointment.",
+        "button": "Send",
+        "location": "We are located in",
+        "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+    }
+}

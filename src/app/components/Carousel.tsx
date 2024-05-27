@@ -3,6 +3,7 @@ import styles from '@/app/styles/carousel.module.scss';
 import useIsomorphicLayoutEffect from '@/utils/useIsomorphicLayoutEffect';
 import Right from '@/app/assets/right-arrow.svg';
 import Left from '@/app/assets/left-arrow.svg';
+import {useTranslations} from 'next-intl';
 
 interface Review {
   author_name: string;
@@ -16,6 +17,7 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ reviews }) => {
+  const t = useTranslations('reviews');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -40,7 +42,7 @@ const Carousel: React.FC<CarouselProps> = ({ reviews }) => {
               <p className={styles.carousel__author}>- {review.author_name}</p>
               <div className={styles.carousel__rating} style={{ '--rating': review.rating } as React.CSSProperties}></div>
               <a href={review.author_url} target="_blank" rel="noopener noreferrer" className={`underline ${styles.carousel__link}`}>
-                Leer más
+                {t('button')}
               </a>
 
             </div>

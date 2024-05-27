@@ -1,99 +1,101 @@
 import React, { useRef } from 'react';
 import Tabs from '@/app/components/Tabs';
-import relajante from '@/app/assets/photos/relajante.jpg'
-import quiropratico from '@/app/assets/photos/quiropractico.jpg'
-import profundo from '@/app/assets/photos/profundo.jpg'
-import descontracturante from '@/app/assets/photos/descontracturante.jpg'
-import compostela from '@/app/assets/photos/compostela.jpg'
-import deluxe from '@/app/assets/photos/deluxe.jpg'
-import piernascansadas from '@/app/assets/photos/piernas-cansadas.jpg'
-import aromaterapia from '@/app/assets/photos/aromaterapia.jpeg'
-import regenerativo from '@/app/assets/photos/regenerativo.jpg'
+import relajante from '@/app/assets/webp/relajante.webp'
+import quiropratico from '@/app/assets/webp/quiropractico.webp'
+import profundo from '@/app/assets/webp/profundo.webp'
+import descontracturante from '@/app/assets/webp/descontracturante.webp'
+import compostela from '@/app/assets/webp/compostela.webp'
+import deluxe from '@/app/assets/webp/deluxe.webp'
+import piernascansadas from '@/app/assets/webp/piernas-cansadas.webp'
+import aromaterapia from '@/app/assets/webp/aromaterapia.webp'
+import regenerativo from '@/app/assets/webp/regenerativo.webp'
 import { gsap, Expo } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import {useTranslations} from 'next-intl';
 
 const Masajes: React.FC = () => {
+  const t = useTranslations('massages');
     const masajes = [
         {
-          title: 'Masaje Compostela',
+          title: t('compostela.title'),
           content: {
             image: compostela,
-            text: 'Elimina la inflamación, mejora la circulación de tu piernas y  refréscate. El masaje compostela es un masaje completo descontracturante, donde recibirás un tratamiento único de piernas cansadas, reflexología  o vendas en frío. Además el masaje incluye esencia de romero, vital para tus  piernas. Finalmente terminaremos con una mascarilla de aloe vera.',
-            time: '90 minutos',
-            price: '80€'
+            text: t('compostela.description'),
+            time: t('compostela.time'),
+            price: t('compostela.price')
           }
         },
         {
-          title: 'Masaje Deluxe',
+          title: t('deluxe.title'),
           content: {
             image: deluxe,
-            text: 'El masaje deluxe se trata de  una terapia destinada a mejorar el bienestar de la persona  pues su máximo objetivo es aumentar la producción de endorfinas en nuestro cuerpo, acompañado con un ritual de aromaterapia con un aceite esencial  de lavanda. Disfrutarás de un masaje de hombros y cabeza, acompañado de aceite esencial de lavanda y un tratamiento facial, hidratando e forma profunda la piel de tu cara y de tu cuello.',
-            time: '90 minutos',
-            price: '80€'
+            text: t('deluxe.description'),
+            time: t('deluxe.time'),
+            price: t('deluxe.price')
           }
         },
         {
-          title: 'Masaje Regenerativo',
+          title: t('regenerative.title'),
           content: {
             image: regenerativo,
-            text: 'Este masaje que tiene como objetivo aliviar la tensión muscular, mejorar la circulación sanguínea, estimular el sistema inmunológico y favorecer la recuperación de los tejidos dañados. Se trata de un masaje que combina técnicas suaves y profundas, presiones, amasamientos, roces y movimientos específicos sobre la piel, con el fin de relajar el cuerpo y la mente.',
-            time: '40 minutos',
-            price: '30€'
+            text: t('regenerative.description'),
+            time: t('regenerative.time'),
+            price: t('regenerative.price')
           }
         },
         {
-          title: 'Masaje Decontracturante',
+          title: t('decontracturant.title'),
           content: {
             image: descontracturante,
-            text: 'Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje decontracturante. Mediante técnicas especializadas, trabajaremos en los puntos de tensión muscular, liberando nudos y restableciendo la flexibilidad y el equilibrio en tu cuerpo. Este masaje es ideal para aquellos que buscan alivio de dolores musculares y rigidez.',
-            time: '60 minutos',
-            price: '60€'
+            text: t('decontracturant.description'),
+            time: t('decontracturant.time'),
+            price: t('decontracturant.price')
           }
         },
         {
-          title: 'Masaje Profundo',
+          title: t('deep.title'),
           content: {
             image: profundo,
-            text: 'Masaje de espalda, masaje de cuello y masaje de hombros. Este masaje de presión firme, se enfoca en la tensión y tirantez del músculo. El masaje profundo se trata de un masaje a lo largo de toda la espalda, enfocado a las personas que pasan varias horas del día sentadas y que han adoptado malos hábitos posturales. Relaja la zona lumbar, el cuello, la cabeza y los hombros con nuestro masaje profundo.',
-            time: '60 minutos',
-            price: '60€'
+            text: t('deep.description'),
+            time: t('deep.time'),
+            price: t('deep.price')
           }
         },
         {
-          title: 'Masaje Quiropráctico',
+          title: t('quiropractic.title'),
           content: {
             image: quiropratico,
-            text: 'Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje quiropráctico. Se trata de un masaje descontracturante que consiste en eliminar las contracturas que provocamos al realizar nuestra actividad cotidiana, con estrés o crispación. Sea cual sea la causa de la contractura es necesario eliminarla porque crea una descompensación estructural.',
-            time: '60 minutos',
-            price: '55€'
+            text: t('quiropractic.description'),
+            time: t('quiropractic.time'),
+            price: t('quiropractic.price'),
           }
         },
         {
-          title: 'Masaje Piernas Cansadas',
+          title: t('tiredLegs.title'),
           content: {
             image: piernascansadas,
-            text: 'Empezaremos con un masaje en la pierna entera, trabajaremos con   presión suave, con poco de drenaje, realizando vaciados, a continuación, se acompañará con un ritual especial verano, con un aceite esencial. El aceite esencial quimiotipado de Romero, es el aceite de la mente. Usado en la antigua Grecia, con propiedades analgésicas, relajantes musculares, drenantes y activadoras de la circulación, finalmente realizaremos un vendaje en pierna entera efecto frio',
-            time: '60 minutos',
-            price: '60€'
+            text: t('tiredLegs.description'),
+            time: t('tiredLegs.time'),
+            price: t('tiredLegs.price'),
           }
         },
         {
-          title: 'Masaje Relajante',
+          title: t('relaxing.title'),
           content: {
             image: relajante,
-            text: 'Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje relajante. Mediante técnicas especializadas, trabajaremos en los puntos de tensión muscular, liberando nudos y restableciendo la flexibilidad y el equilibrio en tu cuerpo. Este masaje es ideal para aquellos que buscan alivio de tensión muscular.',
-            time: '60 minutos',
-            price: '60€'
+            text: t('relaxing.description'),
+            time: t('relaxing.time'),
+            price: t('relaxing.price'),
           }
         },
         {
-          title: 'Aromaterapia',
+          title: t('aromatheraphy.title'),
           content: {
             image: aromaterapia,
-            text: 'Ya sea que desees reducir el estrés, aliviar dolores musculares, mejorar la calidad del sueño o simplemente consentirte, nuestro masaje de aromaterapia te brindará una experiencia holística y personalizada. Permítenos llevarte a un viaje de relajación y sanación, donde los aromas y las manos expertas de nuestro terapeuta se unen para brindarte una experiencia inolvidable de bienestar y rejuvenecimiento.',
-            time: '60 minutos',
-            price: '60€'
+            text: t('aromatheraphy.description'),
+            time: t('aromatheraphy.time'),
+            price: t('aromatheraphy.price'),
           }
         }
       ];
@@ -145,7 +147,7 @@ const Masajes: React.FC = () => {
 
   return (
     <div ref={massageRef} className='py-16'>
-        <h2 className='pb-8 sm:px-8 sm:text-center title'>Nuestros Masajes <span className="text-2xl px-2 sm:text-center sm:block">&#10022;</span></h2>
+        <h2 className='pb-8 sm:px-8 sm:text-center title'>{t('title')} <span className="text-2xl px-2 sm:text-center sm:block">&#10022;</span></h2>
      <Tabs tabs={masajes} />
     </div>
   );

@@ -8,10 +8,14 @@ import styles from "@/app/styles/header.module.scss";
 import ScrollToButton from "@/app/components/ScrollToButton";
 import { gsap, Expo } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import useMediaQuery from "@/utils/useMediaQuery";
+import LocaleSwitcher from "@/app/components/LocaleSwitcher";
+import {useTranslations} from 'next-intl';
+
 
 const Header: React.FC = () => {
+
+  const t = useTranslations('header');
   const router = useRouter();
   const [visible, setVisible] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -101,13 +105,16 @@ const Header: React.FC = () => {
           </button>
           <ul className={`nav-items flex items-center gap-4 ${!toggle ? "" : styles.active}`}>
             <li className="nav-item" onClick={openMenu}>
-              <ScrollToButton toId={'espacio'} duration={150}>Nuestro espacio</ScrollToButton>
+              <ScrollToButton toId={'masajes'} duration={150}>{t('massages')}</ScrollToButton>
             </li>
             <li className="nav-item" onClick={openMenu}>
-              <ScrollToButton toId={'masajes'} duration={150}>Masajes</ScrollToButton>
+              <ScrollToButton toId={'espacio'} duration={150}>{t('space')}</ScrollToButton>
             </li>
             <li className="nav-item" onClick={openMenu}>
-              <ScrollToButton toId={'contacto'} duration={150}>Contacto</ScrollToButton>
+              <ScrollToButton toId={'contacto'} duration={150}>{t('contact')}</ScrollToButton>
+            </li>
+            <li className="nav-item" onClick={openMenu}>
+              <LocaleSwitcher></LocaleSwitcher>
             </li>
           </ul>
         </nav>

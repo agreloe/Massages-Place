@@ -1,0 +1,104 @@
+{
+    "videoComponent": {
+        "title": "Masajes Compostela",
+        "description": "Tu oasis de relajación y bienestar. El destino ideal para tu descanso y rejuvenecimiento."
+    },
+    "header": {
+        "massages": "Masajes",
+        "space": "Espacio",
+        "contact": "Contacto",
+        "switchLocale": "EN"
+    },
+    "massages": {
+        "title": "Nuestros Masajes",
+        "compostela": {
+            "title": "Masaje Compostela",
+            "description": "Elimina la inflamación, mejora la circulación de tu piernas y refréscate. El masaje compostela es un masaje completo descontracturante, donde recibirás un tratamiento único de piernas cansadas, reflexología o vendas en frío. Además el masaje incluye esencia de romero, vital para tus piernas. Finalmente terminaremos con una mascarilla de aloe vera.",
+            "time": "90 minutos",
+            "price": "80€"
+        },
+        "deluxe": {
+            "title": "Masaje Deluxe",
+            "description": "El masaje deluxe se trata de una terapia destinada a mejorar el bienestar de la persona pues su máximo objetivo es aumentar la producción de endorfinas en nuestro cuerpo, acompañado con un ritual de aromaterapia con un aceite esencial de lavanda. Disfrutarás de un masaje de hombros y cabeza, acompañado de aceite esencial de lavanda y un tratamiento facial, hidratando e forma profunda la piel de tu cara y de tu cuello.",
+            "time": "90 minutos",
+            "price": "80€"
+        },
+        "regenerative": {
+            "title": "Masaje Regenerativo",
+            "description": "Este masaje que tiene como objetivo aliviar la tensión muscular, mejorar la circulación sanguínea, estimular el sistema inmunológico y favorecer la recuperación de los tejidos dañados. Se trata de un masaje que combina técnicas suaves y profundas, presiones, amasamientos, roces y movimientos específicos sobre la piel, con el fin de relajar el cuerpo y la mente.",
+            "time": "40 minutos",
+            "price": "30€"
+        },
+        "decontracturant": {
+            "title": "Masaje Descontracturante",
+            "description": "Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje decontracturante. Mediante técnicas especializadas, trabajaremos en los puntos de tensión muscular, liberando nudos y restableciendo la flexibilidad y el equilibrio en tu cuerpo. Este masaje es ideal para aquellos que buscan alivio de dolores musculares y rigidez.",
+            "time": "60 minutos",
+            "price": "60€"
+        },
+        "deep": {
+            "title": "Masaje Profundo",
+            "description": "Masaje de espalda, masaje de cuello y masaje de hombros. Este masaje de presión firme, se enfoca en la tensión y tirantez del músculo. El masaje profundo se trata de un masaje a lo largo de toda la espalda, enfocado a las personas que pasan varias horas del día sentadas y que han adoptado malos hábitos posturales. Relaja la zona lumbar, el cuello, la cabeza y los hombros con nuestro masaje profundo.",
+            "time": "60 minutos",
+            "price": "60€"
+        },
+        "quiropractic": {
+            "title": "Masaje Quiroprático",
+            "description": "Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje quiropráctico. Se trata de un masaje descontracturante que consiste en eliminar las contracturas que provocamos al realizar nuestra actividad cotidiana, con estrés o crispación. Sea cual sea la causa de la contractura es necesario eliminarla porque crea una descompensación estructural.",
+            "time": "60 minutos",
+            "price": "55€"
+        },
+        "tiredLegs": {
+            "title": "Masaje Piernas Cansadas",
+            "description": "Empezaremos con un masaje en la pierna entera, trabajaremos con presión suave, con poco de drenaje, realizando vaciados, a continuación, se acompañará con un ritual especial verano, con un aceite esencial. El aceite esencial quimiotipado de Romero, es el aceite de la mente. Usado en la antigua Grecia, con propiedades analgésicas, relajantes musculares, drenantes y activadoras de la circulación, finalmente realizaremos un vendaje en pierna entera efecto frio",
+            "time": "60 minutos",
+            "price": "60€"
+        },
+        "relaxing": {
+            "title": "Masaje Relajante",
+            "description": "Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje relajante. Mediante técnicas especializadas, trabajaremos en los puntos de tensión muscular, liberando nudos y restableciendo la flexibilidad y el equilibrio en tu cuerpo. Este masaje es ideal para aquellos que buscan alivio de tensión muscular.",
+            "time": "60 minutos",
+            "price": "60€"
+        },
+        "aromatheraphy": {
+            "title": "Aromaterapia",
+            "description": "Ya sea que desees reducir el estrés, aliviar dolores musculares, mejorar la calidad del sueño o simplemente consentirte, nuestro masaje de aromaterapia te brindará una experiencia holística y personalizada. Permítenos llevarte a un viaje de relajación y sanación, donde los aromas y las manos expertas de nuestro terapeuta se unen para brindarte una experiencia inolvidable de bienestar y rejuvenecimiento.",
+            "time": "60 minutos",
+            "price": "60€"
+        }
+
+
+
+
+    },
+    "space": {
+        "title": "Nuestro Espacio",
+        "description": "Nos encontramos en la República do Salvador nº6, en pleno Centro de Santiago de Compostela, en el interior Cowork+ center. Un amplio coworking el cual cuenta con una superficie de más de 300m2, y una zona dedicada exclusivamente al relax.",
+        "description2": "En Masajes Compostela ofrecemos una amplia variedad y tipología de masajes adaptados a tus necesidades. Nuestras especialidades son: masajes relajantes, terapéuticos, descontracturantes y tratamientos estéticos. Apostamos por utilizar primeras marcas de nuestro entorno más próximo.",
+        "button": "Consigue tu cita"
+    },
+    "reviews": {
+        "title": "Opiniones de nuestros clientes",
+        "button": "Leer más"
+    },
+    "contact": {
+        "title": "Contacta con nosotros",
+        "disclaimer": "Información importante",
+        "disclaimerText": "Se atiende únicamente con cita previa. Consiga su cita mediante el formulario o comunicándose por",
+        "wsapp": "Whatsapp",
+        "email": "email",
+        "phone": "teléfono",
+        "formName": "Nombre",
+        "formEmail": "Email",
+        "formMessage": "Mensaje",
+        "formPlaceholder": "Por favor detalle en que fecha y horario le gustaría agendar una cita",
+        "button": "Enviar",
+        "location": "Estamos en",
+        "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+    },
+    "modal": {
+        "title": "Muchas gracias por contactarnos.",
+        "description": "Le contactaremos a la brevedad.",
+        "description2": "También puedes contactarnos a través de"
+    }
+
+}
