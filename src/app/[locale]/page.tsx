@@ -7,8 +7,8 @@ import Blur from '@/app/assets/blur.svg';
 import useIsomorphicLayoutEffect from '@/utils/useIsomorphicLayoutEffect';
 import Masajes from '@/app/components/Masajes';
 import Espacio from '@/app/components/Espacio';
-import { gsap, Expo } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap, Expo } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {useTranslations} from 'next-intl';
 
 

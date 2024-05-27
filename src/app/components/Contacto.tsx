@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import MyGoogleMap from "@/app/components/GoogleMap";
 import Form from "@/app/components/Form";
-import { gsap, Expo } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap, Expo } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import {useTranslations} from 'next-intl';
 

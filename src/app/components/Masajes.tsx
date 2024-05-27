@@ -9,8 +9,8 @@ import deluxe from '@/app/assets/webp/deluxe.webp'
 import piernascansadas from '@/app/assets/webp/piernas-cansadas.webp'
 import aromaterapia from '@/app/assets/webp/aromaterapia.webp'
 import regenerativo from '@/app/assets/webp/regenerativo.webp'
-import { gsap, Expo } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap, Expo } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import {useTranslations} from 'next-intl';
 

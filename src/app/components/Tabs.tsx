@@ -2,8 +2,8 @@ import React, { useState, useRef } from 'react';
 import styles from '@/app/styles/tabs.module.scss';
 import Image, { StaticImageData } from 'next/image';
 import ScrollToButton from '@/app/components/ScrollToButton';
-import { gsap, Expo } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap, Expo } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {useTranslations} from 'next-intl';
 
 interface Tab {
