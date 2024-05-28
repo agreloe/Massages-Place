@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import espacio from '@/app/assets/photos/espacio.jpg';
+import espacio from '@/app/assets/webp/espacio.webp';
 import Image from 'next/image';
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

@@ -1,8 +1,7 @@
-// components/GoogleMap/GoogleMap.tsx
 'use client';
 
 import React, { useCallback, useRef } from 'react';
-import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',

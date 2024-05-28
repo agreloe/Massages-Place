@@ -1,17 +1,23 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import useIsomorphicLayoutEffect from '@/utils/useIsomorphicLayoutEffect';
 import {useTranslations} from 'next-intl';
+import deluxe from '@/app/assets/webp/deluxe.webp'
+import Image from 'next/image';
+import useMediaQuery from '@/utils/useMediaQuery';
 
 const VideoComponent: React.FC = () => {
+  const videoElementRef = useRef<HTMLVideoElement | null>(null);
   const t = useTranslations('videoComponent');
   const videoRef = useRef<HTMLInputElement>(null)
   const q = gsap.utils.selector(videoRef);
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
+  const isBreakpoint = useMediaQuery(767.9);
+
+  useIsomorphicLayoutEffect(() => {
 
     let anim = gsap.fromTo(q('.section'), {
       y: 100,
@@ -29,6 +35,24 @@ const VideoComponent: React.FC = () => {
 
   })
 
+  useIsomorphicLayoutEffect(() => {
+    const handleResize = () => {
+      if (videoElementRef.current) {
+        if (isBreakpoint) {
+          videoElementRef.current.play();
+        } else {
+          videoElementRef.current.pause();
+        }
+      }
+
+      window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }})
+
 
 
   return (
@@ -44,7 +68,13 @@ const VideoComponent: React.FC = () => {
         <div className="arc-wrapper section">
 
       <div className='arc'>
-        <video className='arc-video' autoPlay loop muted>
+      <picture className='hiddem sm:block sm:w-full sm:h-full sm:object-cover'>
+        {/* @ts-ignore */}
+        <source media="(max-width: 767px)" srcSet={deluxe}  />
+        <Image className='w-full !h-full object-cover object-right' src={deluxe} alt="Imagen de aceites esenciales" width={0} height={0} sizes='100vw'></Image>
+      </picture>
+
+        <video ref={videoElementRef} className='arc-video sm:hidden sm:w-full sm:h-auto' autoPlay loop muted>
         <source src="/video-portada-mc.webm" type="video/webm" />
         </video>
       </div>

@@ -64,13 +64,22 @@ const Reviews: React.FC<ReviewsProps> = ({
     };
 
     fetchReviews();
+
+    console.log(reviews);
   }, [placeId]);
 
   return (
     <div ref={reviewsRef} className="py-16 sm:px-8 sm:min-h-[650px] min-h-[475px]">
       <div className="content">
         <h2 className='pb-8 text-center'>{t('title')}</h2>
-        <Carousel reviews={reviews}></Carousel>
+        {
+          reviews.length > 0 ? (
+
+            <Carousel reviews={reviews}></Carousel>
+          ) : (
+            <p className="text-center">{t('no_reviews')}</p>
+          )
+        }
       </div>
     </div>
   );

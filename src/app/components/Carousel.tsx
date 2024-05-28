@@ -51,9 +51,11 @@ const Carousel: React.FC<CarouselProps> = ({ reviews }) => {
       </div>
       <button className={`${styles.carousel__button} ${styles['carousel__button--left']}`} onClick={() => setCurrentIndex((currentIndex === 0 ? reviews.length : currentIndex) - 1)}>
         <Left width="32" height="32"></Left>
+        <span className='sr-only'>Ir a la izquierda</span>
       </button>
       <button className={`${styles.carousel__button} ${styles['carousel__button--right']}`} onClick={nextSlide}>
         <Right width="32" height="32"></Right>
+        <span className='sr-only'>Ir a la derecha</span>
       </button>
     </div>
   );

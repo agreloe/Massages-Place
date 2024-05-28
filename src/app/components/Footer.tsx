@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <footer className='w-full border-t border-solid border-text_color h-fit flex justify-center items-center absolute bottom-0 left-0 z-100 bg-bg_color'>
             <div className='flex flex-col items-center gap-2 p-4'>
                 <div className='flex items-center gap-4'>
-                    <a className='block' href='' target='_blank' rel='noopener noreferrer'>
+                    <a className='block' href='https://www.instagram.com/masajes.compostela/' target='_blank' rel='noopener noreferrer'>
                         <Insta width='24px' height='24px' />
                         <span className="sr-only">Instagram</span>
                     </a>

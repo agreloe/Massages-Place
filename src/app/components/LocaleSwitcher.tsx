@@ -25,6 +25,7 @@ const LocaleSwitcher = () => {
     <div className='relative'>
       <button onClick={toggleDropdown} className='flex items-center'>
         <GloveIcon width={22} height={22} />
+        <span className="sr-only">Cambiar idioma</span>
       </button>
 
         <ol className={`absolute top-[64px] right-[-1.5rem] w-[100px] bg-bg_color border border-solid border-text_color flex p-4 flex-col justify-center items-center gap-4 sm:border-0 sm:w-[280px] sm:flex-row sm:justify-between sm:top-[50px] sm:left-[50%] sm:right-[50%] sm:translate-x-[-50%] sm:translate-y-[-50%] sm:z-[-1] transition-all ease-in-expo ${dropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
