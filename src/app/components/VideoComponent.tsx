@@ -83,7 +83,7 @@ const VideoComponent: React.FC = () => {
       <picture className='hiddem sm:block sm:w-full sm:h-full sm:object-cover'>
         {/* @ts-ignore */}
         <source media="(max-width: 767px)" srcSet='/deluxe.webp 1x'/>
-        <Image className='w-full !h-full object-cover object-right' src={deluxe} alt="Imagen de aceites esenciales" width={0} height={0} sizes='100vw' priority></Image>
+        <Image className='w-full h-full max-w-[400px] object-cover object-right' src={deluxe} alt="Imagen de aceites esenciales" width={0} height={0} sizes='100vw' priority></Image>
       </picture>
 
         <video ref={videoElementRef} className='arc-video sm:hidden sm:w-full sm:h-auto' autoPlay loop muted>
