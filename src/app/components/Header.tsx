@@ -41,7 +41,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node) && toggle) {
+      if (headerRef.current && !headerRef.current.contains(event.target as Node) && toggle) {
         setToggle(false);
       }
     };
@@ -58,7 +58,12 @@ const Header: React.FC = () => {
   };
 
   const openMenu = () => {
-    setToggle(!toggle);
+    if(toggle) {
+      setToggle(false);
+    }
+    else {
+      setToggle(true);
+    }
 
     if (isBreakpoint) {
       // @ts-ignore
@@ -82,6 +87,7 @@ const Header: React.FC = () => {
       !toggle ? anim.play() : anim.reverse(0);
     }
   };
+
 
   return (
     <header
