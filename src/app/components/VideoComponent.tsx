@@ -82,7 +82,7 @@ const VideoComponent: React.FC = () => {
       <div className='arc'>
       <picture className='hiddem sm:block sm:w-full sm:h-full sm:object-cover'>
         {/* @ts-ignore */}
-        <source media="(max-width: 767px)" srcSet={deluxe}  />
+        <source media="(max-width: 767px)" srcSet='/deluxe.webp 1x'/>
         <Image className='w-full !h-full object-cover object-right' src={deluxe} alt="Imagen de aceites esenciales" width={0} height={0} sizes='100vw' priority></Image>
       </picture>
 
