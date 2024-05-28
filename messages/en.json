@@ -80,7 +80,7 @@
     },
     "reviews": {
         "title": "Our client reviews",
-        "button": "Read more",
+        "button": "Read full comment",
         "no_reviews": "Loading reviews..."
     },
     "contact": {

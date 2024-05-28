@@ -84,7 +84,7 @@
     },
     "reviews": {
         "title": "Opiniones de nuestros clientes",
-        "button": "Leer más",
+        "button": "Leer comentario completo",
         "no_reviews": "Cargando comentarios..."
     },
     "contact": {

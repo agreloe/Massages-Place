@@ -80,7 +80,7 @@
     },
     "reviews": {
         "title": "Unser Kunde bewertet",
-        "button": "Mehr lesen",
+        "button": "Vollständigen Kommentar lesen",
         "no_reviews": "Kommentare laden..."
     },
     "contact": {
