@@ -3,8 +3,9 @@ import espacio from '@/app/assets/webp/espacio.webp';
 import Image from 'next/image';
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import {useTranslations} from 'next-intl';
+import useIsomorphicLayoutEffect from '@/utils/useIsomorphicLayoutEffect';
+import Worker from 'worker-loader!../workers/animationWorker';
 
 const Espacio: React.FC = () => {
     const t = useTranslations('space');
@@ -12,8 +13,51 @@ const Espacio: React.FC = () => {
   const q = gsap.utils.selector(espacioRef);
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
+  const worker = useRef(new Worker());
 
-  useGSAP(()=>{
+  useIsomorphicLayoutEffect(()=>{
+    const handleAnimation = () => {
+      worker.current.onmessage = (event: MessageEvent) => {
+        const { type, payload } = event.data;
+        if (type === 'ANIMATION_RESULT') {
+
+          const blockAnim = gsap.fromTo(q(".content"), {
+              y: payload[0].y,
+              opacity: payload[0].opacity,
+            }, {
+              y: 0,
+              opacity: 1,
+              duration: 0.3,
+              ease: Expo.easeOut
+            });
+
+          ScrollTrigger.create({
+            trigger: espacioRef.current,
+            start: "top 60%",
+            end: "bottom top",
+            animation: blockAnim,
+          });
+
+          ScrollTrigger.refresh(true);
+        }
+      };
+
+      worker.current.postMessage({
+        type: 'ANIMATE',
+        payload: [
+          { y: 50, opacity: 0 }
+        ]
+      });
+    };
+
+    handleAnimation();
+
+    return () => {
+      worker.current.terminate();
+    };
+  },[])
+
+/*   useGSAP(()=>{
     //@ts-ignore
     const blockAnim = gsap
       .fromTo(
@@ -42,7 +86,7 @@ const Espacio: React.FC = () => {
       });
 
       ScrollTrigger.refresh(true)
-  })
+  }) */
 
   return (
     <div ref={espacioRef} className="py-16 sm:px-8 flex sm:flex-col gap-8 justify-between sm:justify-center sm:gap-16">

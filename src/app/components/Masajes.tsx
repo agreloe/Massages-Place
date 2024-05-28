@@ -13,6 +13,8 @@ import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import {useTranslations} from 'next-intl';
+import useIsomorphicLayoutEffect from '@/utils/useIsomorphicLayoutEffect';
+import Worker from 'worker-loader!../workers/animationWorker';
 
 const Masajes: React.FC = () => {
   const t = useTranslations('massages');
@@ -103,8 +105,60 @@ const Masajes: React.FC = () => {
   const q = gsap.utils.selector(massageRef);
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
+  const worker = useRef(new Worker());
 
-  useGSAP(() => {
+  useIsomorphicLayoutEffect(()=>{
+    const handleAnimation = () => {
+      worker.current.onmessage = (event: MessageEvent) => {
+        const { type, payload } = event.data;
+        if (type === 'ANIMATION_RESULT') {
+          const [titleAnimation, contentAnimation] = payload;
+
+          //@ts-ignore
+          tl.current = gsap.timeline({ defaults: { duration: 0.3, ease: Expo.easeOut } })
+            .fromTo(q(".title"), {
+              y: titleAnimation.y,
+              opacity: titleAnimation.opacity,
+            }, {
+              y: 0,
+              opacity: 1,
+            })
+            .fromTo(q(".content"), {
+              y: contentAnimation.y,
+              opacity: contentAnimation.opacity,
+            }, {
+              y: 0,
+              opacity: 1,
+            }, '<')
+
+          ScrollTrigger.create({
+            trigger: massageRef.current,
+            start: "top 60%",
+            end: "bottom top",
+            animation: tl.current,
+          });
+
+          ScrollTrigger.refresh(true);
+        }
+      };
+
+      worker.current.postMessage({
+        type: 'ANIMATE',
+        payload: [
+          { y: 50, opacity: 0 }, // Initial values for .title
+          { y: 50, opacity: 0 }  // Initial values for .content
+        ]
+      });
+    };
+
+    handleAnimation();
+
+    return () => {
+      worker.current.terminate();
+    };
+  },[])
+
+/*   useGSAP(() => {
     //@ts-ignore
      tl.current = gsap
         .timeline({defaults: {duration: 0.3, ease: Expo.easeOut}})
@@ -143,7 +197,9 @@ const Masajes: React.FC = () => {
         });
 
         ScrollTrigger.refresh(true)
-  })
+  }) */
+
+
 
   return (
     <div ref={massageRef} className='py-16'>

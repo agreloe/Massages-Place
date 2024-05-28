@@ -6,6 +6,7 @@ import {useTranslations} from 'next-intl';
 import deluxe from '@/app/assets/webp/deluxe.webp'
 import Image from 'next/image';
 import useMediaQuery from '@/utils/useMediaQuery';
+import Worker from 'worker-loader!../workers/animationWorker';
 
 const VideoComponent: React.FC = () => {
   const videoElementRef = useRef<HTMLVideoElement | null>(null);
@@ -14,26 +15,37 @@ const VideoComponent: React.FC = () => {
   const q = gsap.utils.selector(videoRef);
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
+  const worker = useRef(new Worker());
 
   const isBreakpoint = useMediaQuery(767.9);
 
   useIsomorphicLayoutEffect(() => {
+    const handleAnimation = () => {
+      worker.current.onmessage = (event) => {
+        const { type, payload } = event.data;
+        if (type === 'ANIMATION_RESULT') {
+          gsap.fromTo(q('.section'), {
+            y: payload[0].y,
+            opacity: payload[0].opacity,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.3,
+            ease: Expo.easeOut,
+          });
+        }
+      };
 
-    let anim = gsap.fromTo(q('.section'), {
-      y: 100,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 0.3,
-      ease: Expo.easeOut,
-    }
-    )
+      worker.current.postMessage({ type: 'ANIMATE', payload: [{ y: 100, opacity: 0 }] });
+    };
 
-    anim.play();
+    handleAnimation();
 
-  })
+    return () => {
+      worker.current.terminate();
+    };
+  }, []);
 
   useIsomorphicLayoutEffect(() => {
     const handleResize = () => {
