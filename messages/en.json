@@ -7,7 +7,13 @@
         "massages": "Massages",
         "space": "Our Space",
         "contact": "Contact",
-        "switchLocale": "ES"
+        "switchLocale": "Change language",
+        "locale": {
+            "es": "ES",
+            "en": "EN",
+            "fr": "FR",
+            "de": "DE"
+        }
     },
     "massages": {
         "title": "Our Massages",

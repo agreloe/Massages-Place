@@ -42,7 +42,7 @@ export function animateScroll({ targetPosition, initialPosition, duration }: Ani
     const easedProgress = easeOutQuart(relativeProgress);
 
     // register the height of the fixed navbar
-    const navBarHeight = 80;
+    const navBarHeight = 105;
 
     // calculate new position for every tick of the requestAnimationFrame
     position = initialPosition - amountOfPixelsToScroll * Math.min(easedProgress, 1);

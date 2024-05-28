@@ -1,0 +1,105 @@
+{
+    "videoComponent": {
+        "title": "Compostela Massagen",
+        "description": "Ihre Oase der Entspannung und des Wohlbefindens. Das ideale Ziel für Ihre Erholung und Verjüngung."
+    },
+    "header": {
+        "massages": "Massagen",
+        "space": "Unser Raum",
+        "contact": "Kontakt",
+        "switchLocale": "ES",
+        "locale": {
+            "es": "ES",
+            "en": "EN",
+            "fr": "FR",
+            "de": "DE"
+        }
+    },
+    "massages": {
+        "title": "Unsere Massagen",
+        "compostela": {
+            "title": "Compostela Massage",
+            "description": "Beseitigen Sie Schwellungen, verbessern Sie die Durchblutung Ihrer Beine und erfrischen Sie sich. Die Compostela-Massage ist eine komplette Entstauungsmassage, bei der Sie eine einzigartige Behandlung müder Beine, Reflexzonenmassage oder kalte Bandagen erhalten. Die Massage enthält auch eine Rosmarin-Essenz, die für Ihre Beine sehr wichtig ist. Zum Abschluss gibt es eine Aloe-Vera-Maske.",
+            "time": "90 minuten",
+            "price": "80€"
+        },
+        "deluxe": {
+            "title": "Luxus-Massage",
+            "description": "Die Deluxe-Massage ist eine Therapie zur Verbesserung des Wohlbefindens, da ihr Hauptziel darin besteht, die Produktion von Endorphinen in unserem Körper zu steigern, begleitet von einem Aromatherapie-Ritual mit ätherischem Lavendelöl. Sie genießen eine Schulter- und Kopfmassage, begleitet von ätherischem Lavendelöl, und eine Gesichtsbehandlung, die der Haut von Gesicht und Hals viel Feuchtigkeit spendet.",
+            "time": "90 minuten",
+            "price": "80€"
+        },
+        "regenerative": {
+            "title": "Regenerative Massage",
+            "description": "Diese Massage zielt darauf ab, Muskelverspannungen zu lösen, die Blutzirkulation zu verbessern, das Immunsystem zu stimulieren und die Regeneration von beschädigtem Gewebe zu fördern. Es ist eine Massage, die sanfte und tiefe Techniken, Druck, Kneten, Reiben und spezifische Bewegungen auf der Haut kombiniert, um den Körper und den Geist zu entspannen.",
+            "time": "40 minuten",
+            "price": "30€"
+        },
+        "decontracturant": {
+            "title": "Dekontrakturelle Massage",
+            "description": "Erleben Sie eine sofortige Linderung von Stress und Verspannungen, die sich in Ihrem Körper angesammelt haben, mit unserer Dekontraktionsmassage. Mit speziellen Techniken arbeiten wir an den Spannungspunkten der Muskeln, lösen Knoten und stellen die Flexibilität und das Gleichgewicht Ihres Körpers wieder her. Diese Massage ist ideal für alle, die sich von Muskelschmerzen und Steifheit befreien wollen.",
+            "time": "60 minuten",
+            "price": "60€"
+        },
+        "deep": {
+            "title": "Tiefenmassage",
+            "description": "Rückenmassage, Nackenmassage und Schultermassage. Diese Massage mit festem Druck konzentriert sich auf Muskelverspannungen und Verspannungen. Die Tiefenmassage ist eine Massage entlang des gesamten Rückens und richtet sich an Menschen, die täglich mehrere Stunden sitzen und schlechte Haltungsgewohnheiten haben. Entspannen Sie Ihren unteren Rücken, Nacken, Kopf und Schultern mit unserer Tiefenmassage.",
+            "time": "60 minuten",
+            "price": "60€"
+        },
+        "quiropractic": {
+            "title": "Quiropratische Massage",
+            "description": "Erleben Sie sofortige Linderung von Stress und angesammelten Spannungen in Ihrem Körper mit unserer chiropraktischen Massage. Es handelt sich um eine Dekontraktionsmassage, die darin besteht, die Kontrakturen zu beseitigen, die wir bei der Ausübung unserer täglichen Aktivitäten unter Stress oder Anspannung verursachen. Unabhängig von der Ursache der Kontrakturen ist es notwendig, sie zu beseitigen, da sie eine strukturelle Dekompensation verursachen.",
+            "time": "60 minuten",
+            "price": "55€"
+        },
+        "tiredLegs": {
+            "title": "Massage für müde Beine",
+            "description": "Wir beginnen mit einer Massage am ganzen Bein, arbeiten mit sanftem Druck, mit wenig Drainage, Entleerung, dann begleiten wir es mit einem speziellen Sommerritual, mit einem ätherischen Öl. Das chemotypische ätherische Öl des Rosmarins ist das Öl des Geistes. Es wurde schon im alten Griechenland verwendet, hat schmerzlindernde und muskelentspannende Eigenschaften, wirkt entwässernd und aktiviert den Kreislauf.",
+            "time": "60 minuten",
+            "price": "60€"
+        },
+        "relaxing": {
+            "title": "Entspannende Massage",
+            "description": "Erleben Sie sofortige Linderung von Stress und Verspannungen, die sich in Ihrem Körper aufgebaut haben, mit unserer entspannenden Massage. Mit speziellen Techniken arbeiten wir an Muskelverspannungspunkten, lösen Knoten und stellen die Flexibilität und das Gleichgewicht Ihres Körpers wieder her. Diese Massage ist ideal für alle, die sich von Muskelverspannungen befreien möchten.",
+            "time": "60 minuten",
+            "price": "60€"
+        },
+        "aromatheraphy": {
+            "title": "Aromatherapie",
+            "description": "Ganz gleich, ob Sie Stress abbauen, Muskelschmerzen lindern, die Schlafqualität verbessern oder sich einfach nur verwöhnen lassen möchten, unsere Aromatherapie-Massage bietet Ihnen ein ganzheitliches und individuelles Erlebnis. Lassen Sie sich von uns auf eine Reise der Entspannung und Heilung mitnehmen, auf der Aromen und die erfahrenen Hände unserer Therapeutin zusammenkommen, um Ihnen ein unvergessliches Erlebnis von Wellness und Verjüngung zu bieten.",
+            "time": "60 minuten",
+            "price": "60€"
+        }
+    },
+    "space": {
+        "title": "Unser Raum",
+        "description": "Wir befinden uns in der República do Salvador nº6, im Zentrum von Santiago de Compostela, im Cowork+ Zentrum. Ein geräumiges Coworking mit einer Fläche von mehr als 300 m2 und einem Bereich, der ausschließlich der Entspannung gewidmet ist.",
+        "description2": "Bei Compostela Massages bieten wir eine breite Palette von Massagen an, die auf Ihre Bedürfnisse zugeschnitten sind. Unsere Spezialitäten sind: entspannende, therapeutische, descontracturantes Massagen und ästhetische Behandlungen. Wir haben uns verpflichtet, führende Marken aus unserer unmittelbaren Umgebung zu verwenden.",
+        "button": "Buchen Sie Ihren Termin"
+    },
+    "reviews": {
+        "title": "Unser Kunde bewertet",
+        "button": "Mehr lesen"
+    },
+    "contact": {
+        "title": "Kontakt",
+        "disclaimer": "Wichtige Informationen",
+        "disclaimerText": "Nur nach Vereinbarung. Vereinbaren Sie einen Termin über das untenstehende Formular oder erreichen Sie uns über",
+        "wsapp": "Whatsapp",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "formName": "Name",
+        "formEmail": "E-mail",
+        "formMessage": "Nachricht",
+        "formPlaceholder": "Bitte geben Sie das Datum und die Uhrzeit an, für die Sie einen Termin vereinbaren möchten.",
+        "button": "Senden Sie",
+        "location": "Wir befinden uns in",
+        "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+    },
+    "modal": {
+        "title": "Vielen Dank, dass Sie uns kontaktiert haben!",
+        "description": "Wir werden uns so schnell wie möglich bei Ihnen melden.",
+        "description2": "Sie können uns kontaktieren über"
+    }
+}

@@ -39,7 +39,7 @@ export const ContactEmail: React.FC<ContactEmailProps> = ({ name, email, message
       <Container style={container}>
         <Section style={box}>
           <Img
-            src={`https://ik.imagekit.io/masajescompostela/logo-mc.png`}
+            src={`https://ik.imagekit.io/masajescompostela/logo-mc-redisign.png`}
             width="64"
             height="64"
             alt="Masajes Compostela"

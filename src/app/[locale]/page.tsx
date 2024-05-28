@@ -43,7 +43,7 @@ const Home: React.FC = () => {
   })
 
   return (
-    <main ref={homeRef} className='relative overflow-hidden pt-[80px]'>
+    <main ref={homeRef} className='relative overflow-hidden pt-[105px]'>
       <Blur className="blur w-[600px] h-[500px]"></Blur>
       <Blur className="blur-bottom w-[600px] h-[500px] rotate-45"></Blur>
       <section className='pt-16 pb-20 sm:px-8 border-b border-solid border-text_color relative'>

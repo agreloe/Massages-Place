@@ -11,7 +11,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import useMediaQuery from "@/utils/useMediaQuery";
 import LocaleSwitcher from "@/app/components/LocaleSwitcher";
 import {useTranslations} from 'next-intl';
-
+import logoImg from '@/app/assets/logo-mc-v2.webp'
+import Image from 'next/image';
 
 const Header: React.FC = () => {
 
@@ -87,7 +88,8 @@ const Header: React.FC = () => {
         <nav className="py-2 px-6 flex items-center justify-between min-h-[80px] relative">
           <button type="button" onClick={handleRefresh} className="z-[100]">
             <span className="sr-only">Pagina de Inicio</span>
-            <Logo width={64} className="w-[64px] h-full"></Logo>
+            {/* <Logo width={64} className="w-[64px] h-full"></Logo> */}
+            <Image src={logoImg} alt="Logo de Masajes Compostela" width={90} height={90}></Image>
           </button>
           <button
             type="button"
@@ -103,7 +105,7 @@ const Header: React.FC = () => {
             <span></span>
             <span className="sr-only">Menu</span>
           </button>
-          <ul className={`nav-items flex items-center gap-4 ${!toggle ? "" : styles.active}`}>
+          <ul className={`nav-items flex items-center gap-4 sm:gap-8 ${!toggle ? "" : styles.active}`}>
             <li className="nav-item" onClick={openMenu}>
               <ScrollToButton toId={'masajes'} duration={150}>{t('massages')}</ScrollToButton>
             </li>
@@ -113,7 +115,7 @@ const Header: React.FC = () => {
             <li className="nav-item" onClick={openMenu}>
               <ScrollToButton toId={'contacto'} duration={150}>{t('contact')}</ScrollToButton>
             </li>
-            <li className="nav-item" onClick={openMenu}>
+            <li className="nav-item">
               <LocaleSwitcher></LocaleSwitcher>
             </li>
           </ul>

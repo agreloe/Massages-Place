@@ -1,0 +1,106 @@
+{
+    "videoComponent": {
+        "title": "Massages Compostelle",
+        "description": "Votre oasis de détente et de bien-être. La destination idéale pour votre repos et votre rajeunissement."
+    },
+    "header": {
+        "massages": "Massages",
+        "space": "L'espace",
+        "contact": "Contact",
+        "switchLocale": "ES",
+        "locale": {
+            "es": "ES",
+            "en": "EN",
+            "fr": "FR",
+            "de": "DE"
+        }
+
+    },
+    "massages": {
+        "title": "Nos massages",
+        "compostela": {
+            "title": "Massage de Compostelle",
+            "description": "Éliminez les gonflements, améliorez la circulation dans vos jambes et rafraîchissez-vous. Le massage compostela est un massage décontractant complet, au cours duquel vous recevrez un traitement unique des jambes fatiguées, de la réflexologie ou des bandages froids. Le massage comprend également de l'essence de romarin, vitale pour vos jambes. Enfin, nous terminerons par un masque à l'aloe vera.",
+            "time": "90 minutes",
+            "price": "80€"
+        },
+        "deluxe": {
+            "title": "Massage Deluxe",
+            "description": "Le massage de luxe est une thérapie destinée à améliorer le bien-être de la personne, son objectif principal étant d'augmenter la production d'endorphines dans notre corps. Il est accompagné d'un rituel d'aromathérapie à l'huile essentielle de lavande. Vous bénéficierez d'un massage des épaules et de la tête, accompagné d'huile essentielle de lavande, et d'un soin du visage, qui hydratera en profondeur la peau de votre visage et de votre cou.",
+            "time": "90 minutes",
+            "price": "80€"
+        },
+        "regenerative": {
+            "title": "Massage régénérateur",
+            "description": "Ce massage vise à soulager les tensions musculaires, à améliorer la circulation sanguine, à stimuler le système immunitaire et à favoriser la récupération des tissus endommagés. C'est un massage qui combine des techniques douces et profondes, des pressions, des pétrissages, des frottements et des mouvements spécifiques sur la peau, afin de détendre le corps et l'esprit.",
+            "time": "40 minutes",
+            "price": "30€"
+        },
+        "decontracturant": {
+            "title": "Massage décontracturant",
+            "description": "Profitez d'un soulagement immédiat du stress et des tensions accumulés dans votre corps grâce à notre massage décontracturant. En utilisant des techniques spécialisées, nous travaillerons sur les points de tension musculaire, en libérant les nœuds et en rétablissant la flexibilité et l'équilibre de votre corps. Ce massage est idéal pour ceux qui cherchent à soulager les douleurs musculaires et les raideurs.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "deep": {
+            "title": "Massage en profondeur",
+            "description": "Massage du dos, de la nuque et des épaules. Ce massage à pression ferme se concentre sur les tensions et les crispations musculaires. Le massage profond est un massage de l'ensemble du dos, destiné aux personnes qui passent plusieurs heures par jour en position assise et qui ont adopté de mauvaises habitudes posturales. Détendez le bas du dos, la nuque, la tête et les épaules grâce à notre massage profond.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "quiropractic": {
+            "title": "Massage Quiropratique",
+            "description": "Profitez d'un soulagement immédiat du stress et des tensions accumulées dans votre corps grâce à notre massage chiropratique. Il s'agit d'un massage décontracturant qui consiste à éliminer les contractures que nous provoquons lorsque nous réalisons nos activités quotidiennes, avec du stress ou de la tension. Quelle que soit la cause de la contracture, il est nécessaire de l'éliminer car elle crée une décompensation structurelle.",
+            "time": "60 minutes",
+            "price": "55€"
+        },
+        "tiredLegs": {
+            "title": "Massage des jambes fatiguées",
+            "description": "Nous commencerons par un massage sur toute la jambe, nous travaillerons avec des pressions douces, avec un petit drainage, une vidange, puis nous l'accompagnerons d'un rituel spécial été, avec une huile essentielle. L'huile essentielle chémotypée de Romarin est l'huile de l'esprit. Utilisée dans la Grèce antique, elle a des propriétés analgésiques, myorelaxantes, drainantes et activatrices de la circulation, enfin nous ferons un pansement sur toute la jambe avec un effet froid.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "relaxing": {
+            "title": "Massage relaxant",
+            "description": "Profitez d'un soulagement immédiat du stress et de la tension accumulés dans votre corps grâce à notre massage relaxant. En utilisant des techniques spécialisées, nous travaillerons sur les points de tension musculaire, en libérant les nœuds et en rétablissant la flexibilité et l'équilibre de votre corps. Ce massage est idéal pour ceux qui cherchent à soulager les tensions musculaires.",
+            "time": "60 minutes",
+            "price": "60€"
+        },
+        "aromatheraphy": {
+            "title": "Aromathérapie",
+            "description": "Que vous souhaitiez réduire votre stress, soulager vos douleurs musculaires, améliorer la qualité de votre sommeil ou simplement vous faire plaisir, notre massage aromathérapeutique vous offrira une expérience holistique et personnalisée. Laissez-nous vous emmener dans un voyage de relaxation et de guérison, où les arômes et les mains expertes de notre thérapeute s'unissent pour vous offrir une expérience inoubliable de bien-être et de rajeunissement.",
+            "time": "60 minutes",
+            "price": "60€"
+        }
+    },
+    "space": {
+        "title": "L'espace",
+        "description": "Nous sommes situés à República do Salvador nº6, dans le centre de Santiago de Compostela, dans le centre Cowork+. Un espace de coworking spacieux qui dispose d'une surface de plus de 300m2, et d'une zone dédiée exclusivement à la détente.",
+        "description2": "Chez Compostela Massages, nous proposons une grande variété et une typologie de massages adaptés à vos besoins. Nos spécialités sont les massages relaxants, thérapeutiques, descontracturantes et les traitements esthétiques. Nous nous engageons à utiliser des marques de premier plan provenant de notre environnement immédiat.",
+        "button": "Prenez rendez-vous"
+    },
+    "reviews": {
+        "title": "L'avis de notre client",
+        "button": "En savoir plus"
+    },
+    "contact": {
+        "title": "Nous contacter",
+        "disclaimer": "Informations importantes",
+        "disclaimerText": "Sur rendez-vous uniquement. Prenez rendez-vous en utilisant le formulaire ci-dessous ou en nous contactant à l'adresse suivante",
+        "wsapp": "Whatsapp",
+        "email": "email",
+        "phone": "téléphone",
+        "formName": "Nom",
+        "formEmail": "Email",
+        "formMessage": "Message",
+        "formPlaceholder": "Veuillez préciser la date et l'heure auxquelles vous souhaitez prendre rendez-vous.",
+        "button": "Envoyer",
+        "location": "Nous sommes situés à",
+        "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+    },
+    "modal": {
+        "title": "Merci de nous avoir contactés !",
+        "description": "Nous vous répondrons dans les plus brefs délais.",
+        "description2": "Vous pouvez nous contacter par"
+    }
+}

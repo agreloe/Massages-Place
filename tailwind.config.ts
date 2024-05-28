@@ -16,11 +16,11 @@ const config: Config = {
         'xs': {'max': '375.9px'}
       },
       colors: {
-        bg_color: "#EBE5E0",
+        bg_color: "#EDE6E0",
         primary: "#DEACAA",
         accent: "#E8DDD1",
         border: "#DBBFBB",
-        text_color: "#39383A",
+        text_color: "#004D71",
       },
       fontSize: {
         label: "0.75rem",
