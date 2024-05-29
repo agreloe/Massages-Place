@@ -22,8 +22,8 @@ interface ReviewsProps {
 
 const Reviews: React.FC<ReviewsProps> = ({
   placeId }) => {
-    const worker = new Worker();
-    const animationWorker = useRef(new AnimationWorker());
+    const worker = useRef<Worker | null>(null);
+  const animationWorker = useRef<AnimationWorker | null>(null);
     const t = useTranslations('reviews');
   const reviewsRef = useRef<HTMLInputElement>(null)
   const q = gsap.utils.selector(reviewsRef);
@@ -72,23 +72,28 @@ const Reviews: React.FC<ReviewsProps> = ({
 
   }, [placeId]); */
 
-  useEffect(() => {
-    worker.onmessage = (event: MessageEvent) => {
+  useIsomorphicLayoutEffect(() => {
+    worker.current = new Worker();
+
+    worker.current.onmessage = (event: MessageEvent) => {
       const message = event.data;
       if (message.type === 'REVIEWS_RESULT') {
         setReviews(message.payload);
       }
     };
 
-    worker.postMessage({ type: 'FETCH_REVIEWS', payload: { placeId: placeId } });
+    worker.current.postMessage({ type: 'FETCH_REVIEWS', payload: { placeId: placeId } });
 
     return () => {
-      worker.terminate();
+      worker.current?.terminate();
     };
   }, []);
 
   useIsomorphicLayoutEffect(() => {
+
     const handleAnimation = () => {
+      animationWorker.current = new AnimationWorker();
+
       animationWorker.current.onmessage = (event: MessageEvent) => {
         const { type, payload } = event.data;
         if (type === 'ANIMATION_RESULT') {
@@ -135,7 +140,7 @@ const Reviews: React.FC<ReviewsProps> = ({
     handleAnimation();
 
     return () => {
-      animationWorker.current.terminate();
+      animationWorker.current?.terminate();
     };
   },[])
 

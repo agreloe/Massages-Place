@@ -14,7 +14,8 @@ const Contacto: React.FC = () => {
   const q = gsap.utils.selector(contactoRef);
   const tl = useRef<gsap.core.Timeline>();
   gsap.registerPlugin(ScrollTrigger);
-  const worker = useRef(new Worker());
+
+  const worker = useRef<Worker | null>(null);
 
   useIsomorphicLayoutEffect(()=>{
     /* const handleAnimation = () => {
@@ -59,6 +60,7 @@ const Contacto: React.FC = () => {
     }; */
 
     const handleAnimation = () => {
+      worker.current = new Worker();
       worker.current.onmessage = (event: MessageEvent) => {
         const { type, payload } = event.data;
         if (type === 'ANIMATION_RESULT') {
@@ -104,7 +106,7 @@ const Contacto: React.FC = () => {
     handleAnimation();
 
     return () => {
-      worker.current.terminate();
+      worker.current?.terminate();
     };
   },[])
 

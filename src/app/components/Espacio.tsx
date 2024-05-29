@@ -13,10 +13,11 @@ const Espacio: React.FC = () => {
   const q = gsap.utils.selector(espacioRef);
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
-  const worker = useRef(new Worker());
+  const worker = useRef<Worker | null>(null);
 
   useIsomorphicLayoutEffect(()=>{
     const handleAnimation = () => {
+      worker.current = new Worker();
       worker.current.onmessage = (event: MessageEvent) => {
         const { type, payload } = event.data;
         if (type === 'ANIMATION_RESULT') {
@@ -53,7 +54,7 @@ const Espacio: React.FC = () => {
     handleAnimation();
 
     return () => {
-      worker.current.terminate();
+      worker.current?.terminate();
     };
   },[])
 

@@ -15,12 +15,13 @@ const VideoComponent: React.FC = () => {
   const q = gsap.utils.selector(videoRef);
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
-  const worker = useRef(new Worker());
+  const worker = useRef<Worker | null>(null);
 
   const isBreakpoint = useMediaQuery(767.9);
 
   useIsomorphicLayoutEffect(() => {
     const handleAnimation = () => {
+      worker.current = new Worker();
       worker.current.onmessage = (event) => {
         const { type, payload } = event.data;
         if (type === 'ANIMATION_RESULT') {
@@ -43,7 +44,7 @@ const VideoComponent: React.FC = () => {
     handleAnimation();
 
     return () => {
-      worker.current.terminate();
+      worker.current?.terminate();
     };
   }, []);
 
