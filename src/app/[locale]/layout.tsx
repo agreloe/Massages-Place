@@ -9,6 +9,7 @@ import Favicon32 from '@/app/favicon-32x32.png'
 import Favicon16 from '@/app/favicon-16x16.png'
 import AppleTouch from '@/app/apple-touch-icon.png'
 import Android192 from '@/app/android-chrome-192x192.png'
+import ServiceWorkerProvider from "@/app/components/ServiceWorkerProvider";
 
 // eslint-disable-next-line
 const littleCat = `%c \/\\_\/\\\r\n( o.o )\r\n > ^ <`
@@ -117,7 +118,7 @@ export default async function RootLayout({
         {children}
         <Footer />
         </NextIntlClientProvider>
-
+        <ServiceWorkerProvider></ServiceWorkerProvider>
       </body>
     </html>
   );
