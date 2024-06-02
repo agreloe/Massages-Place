@@ -13,6 +13,13 @@
   src: url("../assets/fonts/gemini.otf") format("opentype");
   font-display: swap;
 }
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-display: swap;
+}
 
 *,
 *::before,
