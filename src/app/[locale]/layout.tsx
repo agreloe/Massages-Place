@@ -32,7 +32,7 @@ export const metadata = {
   },
   title: 'Lugar de masajes',
   description: 'Masajes en Santiago de Compostela: un santuario de paz y rejuvenecimiento, perfecto para aliviar tensiones.',
-  metadataBase: new URL('https://masajescompostela.com'),
+  metadataBase: new URL('https://masajescompostela.netlify.app'),
   alternates: {
     canonical: '/',
     languages: {
@@ -43,11 +43,11 @@ export const metadata = {
 
     },
   },
-  manifest: 'https://masajescompostela.com/manifest.json',
+  manifest: 'https://masajescompostela.netlify.app/manifest.json',
   openGraph: {
     title: 'Lugar de masajes',
     description: 'Masajes en Santiago de Compostela: un santuario de paz y rejuvenecimiento, perfecto para aliviar tensiones.',
-    url: 'https://masajescompostela.com',
+    url: 'https://masajescompostela.netlify.app',
     siteName: 'Lugar de masajes',
     images: [
       {
