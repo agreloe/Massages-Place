@@ -3,19 +3,14 @@
 @tailwind utilities;
 
 @import 'variables.module.scss';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 
 @font-face {
-  font-family: "Cotta";
+  font-family: "Gemini";
   font-style: normal;
   font-weight: normal;
-  src: url("../assets/fonts/Cotta\ Free.otf") format("opentype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "New Reason";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/NewReasonTRIAL-Regular.otf") format("opentype"), url("../assets/fonts/NewReasonTRIAL-Regular.woff") format("woff");
+  src: url("../assets/fonts/gemini.otf") format("opentype");
   font-display: swap;
 }
 
@@ -270,6 +265,75 @@ Video Component
   z-index: 100;
 }
 
+/*
+Style Main Timeline Figure
+*/
+.timelineFigure /* Timeline figure */
+{
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 0.5em 0.5em;
+  width: 100%;
+  height: 100%;
+
+}
+
+.imageFigure /* Figures in the timeline */
+{
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.imageFigure:first-of-type /* First figure in the timeline */
+{
+  z-index: 1;
+}
+
+.imageFigure:last-of-type /* Second figure in the timeline */
+{
+  z-index: 0;
+}
+
+.imageFigure img /* Images in the timeline */
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+Transitions And Transforms
+*/
+.imageFigure /* Figures in the timeline */
+{
+  -webkit-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  -o-transition: opacity 2s linear;
+  transition: opacity 2s linear;
+}
+
+.imageFigure img /* Images in the timeline */
+{
+  -webkit-transition: left 8s linear, top 8s linear;
+  -moz-transition: left 8s linear, top 8s linear;
+  -o-transition: left 8s linear, top 8s linear;
+  transition: left 8s linear, top 8s linear;
+}
+
+.fadeIn {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+  z-index: 0;
+}
 
 
 

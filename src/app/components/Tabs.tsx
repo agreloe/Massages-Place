@@ -73,7 +73,9 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   const clickHandler = (index: number) => {
     setActiveTabIndex(index);
     setIsImageLoaded(false);
-    tabAnim();
+    if (isImageLoaded) {
+      tabAnim();
+    }
   };
 
   useIsomorphicLayoutEffect(() => {
@@ -82,12 +84,6 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
       img.src = tab.content.image.src;
     });
   }, [tabs]);
-
-  useEffect(() => {
-    if (isImageLoaded) {
-      tabAnim();
-    }
-  }, [isImageLoaded]);
 
   return (
     <div ref={tabsRef} className={styles.tabs}>

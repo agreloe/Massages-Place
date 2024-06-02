@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     }
 
     const response = await resend.emails.send({
-      from: 'Masajes Compostela <onboarding@resend.dev>',
+      from: 'Lugar de masajes <onboarding@resend.dev>',
       to: ['reservasmasajescompostela@gmail.com'],
       subject: 'Nuevo Mensaje de Formulario',
       //@ts-ignore

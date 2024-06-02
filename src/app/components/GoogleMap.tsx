@@ -27,7 +27,7 @@ const MyGoogleMap: React.FC = () => {
     const marker = new google.maps.Marker({
       position: center,
       map,
-      title: 'Masajes Compostela',
+      title: 'Lugar de masajes',
     });
 
     markerRef.current = marker;

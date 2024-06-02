@@ -1,13 +1,12 @@
 {
     "videoComponent": {
-        "title": "Masajes Compostela",
+        "title": "Lugar de masajes",
         "description": "Tu oasis de relajación y bienestar. El destino ideal para tu descanso y rejuvenecimiento."
     },
     "header": {
         "massages": "Masajes",
         "space": "Espacio",
         "contact": "Contacto",
-        "switchLocale": "EN",
         "locale": {
             "es": "ES",
             "en": "EN",
@@ -18,56 +17,56 @@
     "massages": {
         "title": "Nuestros Masajes",
         "compostela": {
-            "title": "Masaje Compostela",
-            "description": "Elimina la inflamación, mejora la circulación de tu piernas y refréscate. El masaje compostela es un masaje completo descontracturante, donde recibirás un tratamiento único de piernas cansadas, reflexología o vendas en frío. Además el masaje incluye esencia de romero, vital para tus piernas. Finalmente terminaremos con una mascarilla de aloe vera.",
+            "title": "Masaje Principal",
+            "description": "Alivia la hinchazón, mejora la circulación en tus piernas y siéntete renovado. El masaje Principal es un tratamiento completo y descontracturante que incluye técnicas especializadas para piernas cansadas, reflexología y envolturas frías. Experimenta una sensación única de alivio y frescura para tus piernas.",
             "time": "90 minutos",
             "price": "80€"
         },
         "deluxe": {
             "title": "Masaje Deluxe",
-            "description": "El masaje deluxe se trata de una terapia destinada a mejorar el bienestar de la persona pues su máximo objetivo es aumentar la producción de endorfinas en nuestro cuerpo, acompañado con un ritual de aromaterapia con un aceite esencial de lavanda. Disfrutarás de un masaje de hombros y cabeza, acompañado de aceite esencial de lavanda y un tratamiento facial, hidratando e forma profunda la piel de tu cara y de tu cuello.",
+            "description": "El masaje deluxe es una terapia diseñada para mejorar tu bienestar, con el objetivo principal de aumentar la producción de endorfinas en el cuerpo. Disfrutarás de un masaje en hombros y cabeza, seguido de un tratamiento relajante para la espalda que alivia tensiones y mejora la flexibilidad. La experiencia se completa con técnicas de relajación profunda para todo el cuerpo.",
             "time": "90 minutos",
             "price": "80€"
         },
         "regenerative": {
             "title": "Masaje Regenerativo",
-            "description": "Este masaje que tiene como objetivo aliviar la tensión muscular, mejorar la circulación sanguínea, estimular el sistema inmunológico y favorecer la recuperación de los tejidos dañados. Se trata de un masaje que combina técnicas suaves y profundas, presiones, amasamientos, roces y movimientos específicos sobre la piel, con el fin de relajar el cuerpo y la mente.",
+            "description": "Este masaje se enfoca en reducir la tensión muscular, mejorar el flujo sanguíneo, fortalecer el sistema inmunológico y ayudar a la regeneración de los tejidos. Utiliza una mezcla de técnicas que van desde suaves a profundas, incluyendo presiones, amasamientos y movimientos específicos sobre la piel, con el propósito de proporcionar una profunda relajación física y mental.",
             "time": "40 minutos",
             "price": "30€"
         },
         "decontracturant": {
             "title": "Masaje Descontracturante",
-            "description": "Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje decontracturante. Mediante técnicas especializadas, trabajaremos en los puntos de tensión muscular, liberando nudos y restableciendo la flexibilidad y el equilibrio en tu cuerpo. Este masaje es ideal para aquellos que buscan alivio de dolores musculares y rigidez.",
+            "description": "Descubre un alivio rápido del estrés y la tensión acumulada con nuestro masaje relajante. Utilizando técnicas especializadas, abordaremos las áreas de tensión muscular, deshaciendo nudos y restaurando la flexibilidad y el equilibrio en tu cuerpo. Este tratamiento es perfecto para quienes necesitan aliviar dolores musculares y rigidez.",
             "time": "60 minutos",
             "price": "60€"
         },
         "deep": {
             "title": "Masaje Profundo",
-            "description": "Masaje de espalda, masaje de cuello y masaje de hombros. Este masaje de presión firme, se enfoca en la tensión y tirantez del músculo. El masaje profundo se trata de un masaje a lo largo de toda la espalda, enfocado a las personas que pasan varias horas del día sentadas y que han adoptado malos hábitos posturales. Relaja la zona lumbar, el cuello, la cabeza y los hombros con nuestro masaje profundo.",
+            "description": "Masaje para la espalda, el cuello y los hombros. Este masaje con presión firme se centra en aliviar la tensión y rigidez muscular. El masaje profundo abarca toda la espalda y es ideal para quienes pasan muchas horas sentados y tienen malas posturas. Relaja la zona lumbar, el cuello, la cabeza y los hombros con nuestro masaje intensivo.",
             "time": "60 minutos",
             "price": "60€"
         },
         "quiropractic": {
             "title": "Masaje Quiroprático",
-            "description": "Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje quiropráctico. Se trata de un masaje descontracturante que consiste en eliminar las contracturas que provocamos al realizar nuestra actividad cotidiana, con estrés o crispación. Sea cual sea la causa de la contractura es necesario eliminarla porque crea una descompensación estructural.",
+            "description": "Siente un alivio rápido del estrés y la tensión acumulada con nuestro masaje quiropráctico. Este tratamiento terapéutico se enfoca en liberar los músculos tensos y rígidos causados por las rutinas diarias y el estrés. Es vital tratar estas tensiones, ya que pueden llevar a desequilibrios en la postura y el bienestar general.",
             "time": "60 minutos",
             "price": "55€"
         },
         "tiredLegs": {
-            "title": "Masaje Piernas Cansadas",
-            "description": "Empezaremos con un masaje en la pierna entera, trabajaremos con presión suave, con poco de drenaje, realizando vaciados, a continuación, se acompañará con un ritual especial verano, con un aceite esencial. El aceite esencial quimiotipado de Romero, es el aceite de la mente. Usado en la antigua Grecia, con propiedades analgésicas, relajantes musculares, drenantes y activadoras de la circulación, finalmente realizaremos un vendaje en pierna entera efecto frio",
+            "title": "Masaje Extenso",
+            "description": "Primero, realizaremos un masaje completo en las piernas, empleando una presión ligera y técnicas de drenaje para liberar tensiones. Luego, te envolveremos en un ritual de verano especial, utilizando una loción refrescante con ingredientes naturales. Esta loción está diseñada para calmar y revitalizar, proporcionando alivio muscular y mejorando la circulación. Finalizaremos con un vendaje frío en las piernas para maximizar el efecto relajante.",
             "time": "60 minutos",
             "price": "60€"
         },
         "relaxing": {
             "title": "Masaje Relajante",
-            "description": "Experimenta un alivio inmediato del estrés y la tensión acumulada en tu cuerpo con nuestro masaje relajante. Mediante técnicas especializadas, trabajaremos en los puntos de tensión muscular, liberando nudos y restableciendo la flexibilidad y el equilibrio en tu cuerpo. Este masaje es ideal para aquellos que buscan alivio de tensión muscular.",
+            "description": "Disfruta de una rápida liberación del estrés y la tensión acumulada con nuestro masaje relajante. Utilizando métodos avanzados, nos enfocamos en las áreas de tensión muscular, deshaciendo nudos y restaurando la flexibilidad y el balance en tu cuerpo. Este tratamiento es perfecto para quienes necesitan aliviar la tensión muscular.",
             "time": "60 minutos",
             "price": "60€"
         },
         "aromatheraphy": {
             "title": "Aromaterapia",
-            "description": "Ya sea que desees reducir el estrés, aliviar dolores musculares, mejorar la calidad del sueño o simplemente consentirte, nuestro masaje de aromaterapia te brindará una experiencia holística y personalizada. Permítenos llevarte a un viaje de relajación y sanación, donde los aromas y las manos expertas de nuestro terapeuta se unen para brindarte una experiencia inolvidable de bienestar y rejuvenecimiento.",
+            "description": "Si necesitas aliviar el estrés, reducir dolores musculares, mejorar tu sueño o simplemente mimarte, nuestro masaje de aromaterapia es perfecto para ti. Te llevaremos a una experiencia personalizada de relajación y recuperación, donde los aromas y el toque experto de nuestros terapeutas se combinan para ofrecerte un momento de bienestar y renovación que no olvidarás.",
             "time": "60 minutos",
             "price": "60€"
         }
@@ -78,8 +77,8 @@
     },
     "space": {
         "title": "Nuestro Espacio",
-        "description": "Nos encontramos en la República do Salvador nº6, en pleno Centro de Santiago de Compostela, en el interior Cowork+ center. Un amplio coworking el cual cuenta con una superficie de más de 300m2, y una zona dedicada exclusivamente al relax.",
-        "description2": "En Masajes Compostela ofrecemos una amplia variedad y tipología de masajes adaptados a tus necesidades. Nuestras especialidades son: masajes relajantes, terapéuticos, descontracturantes y tratamientos estéticos. Apostamos por utilizar primeras marcas de nuestro entorno más próximo.",
+        "description": "En Lugar de masajes ofrecemos una amplia variedad y tipología de masajes adaptados a tus necesidades. Nuestras especialidades son: masajes relajantes, terapéuticos, descontracturantes y tratamientos estéticos. Apostamos por utilizar primeras marcas de nuestro entorno más próximo.",
+        "description2": "Además, Lugar de Masajes ofrece un espacio de relajación diseñado para tu confort. Con ambientes tranquilos, música suave y una atmósfera serena, te invitamos a desconectar del estrés diario. Cada rincón está pensado para brindarte una experiencia única de bienestar y paz.",
         "button": "Consigue tu cita"
     },
     "reviews": {
@@ -100,7 +99,7 @@
         "formPlaceholder": "Por favor detalle en que fecha y horario le gustaría agendar una cita",
         "button": "Enviar",
         "location": "Estamos en",
-        "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+        "address": "Calle Falsa 123, Santiago de Compostela, A Coruña"
     },
     "modal": {
         "title": "Muchas gracias por contactarnos.",

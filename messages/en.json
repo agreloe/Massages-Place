@@ -7,7 +7,6 @@
         "massages": "Massages",
         "space": "Our Space",
         "contact": "Contact",
-        "switchLocale": "Change language",
         "locale": {
             "es": "ES",
             "en": "EN",
@@ -18,64 +17,64 @@
     "massages": {
         "title": "Our Massages",
         "compostela": {
-            "title": "Compostela Massage",
-            "description": "Eliminate swelling, improve the circulation in your legs and refresh yourself. The compostela massage is a complete decontracting massage, where you will receive a unique treatment of tired legs, reflexology or cold bandages. The massage also includes rosemary essence, vital for your legs. Finally we will finish with an aloe vera mask.",
+            "title": "Principal Massage",
+            "description": "Relieve swelling, improve circulation in your legs and feel refreshed. The Principal massage is a complete and decontracting treatment that includes specialized techniques for tired legs, reflexology and cold wraps. Experience a unique sensation of relief and freshness for your legs.",
             "time": "90 minutes",
             "price": "80€"
         },
         "deluxe": {
             "title": "Deluxe Massage",
-            "description": "The deluxe massage is a therapy designed to improve the well-being of the person as its main objective is to increase the production of endorphins in our body, accompanied by an aromatherapy ritual with lavender essential oil. You will enjoy a shoulder and head massage, accompanied by lavender essential oil and a facial treatment, deeply moisturising the skin of your face and neck.",
+            "description": "The deluxe massage is a therapy designed to improve your well-being, with the main objective of increasing the production of endorphins in the body. You will enjoy a shoulder and head massage, followed by a relaxing back treatment that relieves tension and improves flexibility. The experience is completed with deep relaxation techniques for the whole body.",
             "time": "90 minutes",
             "price": "80€"
         },
         "regenerative": {
             "title": "Regenerative Massage",
-            "description": "This massage aims to relieve muscle tension, improve blood circulation, stimulate the immune system and promote the recovery of damaged tissues. It is a massage that combines gentle and deep techniques, pressure, kneading, rubbing and specific movements on the skin, in order to relax the body and mind.",
+            "description": "This massage focuses on reducing muscle tension, improving blood flow, strengthening the immune system and aiding tissue regeneration. It uses a mixture of techniques ranging from gentle to deep, including pressure, kneading and specific movements on the skin, with the purpose of providing deep physical and mental relaxation.",
             "time": "40 minutes",
             "price": "30€"
         },
         "decontracturant": {
             "title": "Decontracturant Massage",
-            "description": "Experience immediate relief from the stress and tension built up in your body with our decontracting massage. Using specialised techniques, we will work on muscle tension points, releasing knots and restoring flexibility and balance to your body. This massage is ideal for those seeking relief from muscle aches and stiffness.",
+            "description": "Discover quick relief from accumulated stress and tension with our relaxing massage. Using specialized techniques, we will address areas of muscle tension, unraveling knots and restoring flexibility and balance to your body. This treatment is perfect for those who need relief from muscle aches and stiffness.",
             "time": "60 minutes",
             "price": "60€"
         },
         "deep": {
             "title": "Deep Massage",
-            "description": "Back massage, neck massage and shoulder massage. This firm pressure massage focuses on muscle tension and tightness. The deep massage is a massage along the entire back, focused on people who spend several hours a day sitting and who have adopted bad postural habits. Relax your lower back, neck, head and shoulders with our deep massage.",
+            "description": "Massage for the back, neck and shoulders. This firm pressure massage focuses on relieving muscle tension and stiffness. The deep massage covers the entire back and is ideal for those who spend long hours sitting and have poor posture. Relax your lower back, neck, head and shoulders with our intensive massage.",
             "time": "60 minutes",
             "price": "60€"
         },
         "quiropractic": {
             "title": "Quiropratic Massage",
-            "description": "Experience immediate relief from stress and accumulated tension in your body with our chiropractic massage. This is a decontracting massage that consists of eliminating the contractures that we cause when we carry out our daily activities, with stress or tension. Whatever the cause of the contracture, it is necessary to eliminate it because it creates a structural decompensation.",
+            "description": "Feel quick relief from accumulated stress and tension with our chiropractic massage. This therapeutic treatment focuses on releasing tight and stiff muscles caused by daily routines and stress. It is vital to treat these tensions, as they can lead to imbalances in posture and overall well-being.",
             "time": "60 minutes",
             "price": "55€"
         },
         "tiredLegs": {
-            "title": "Tired Legs Massage",
-            "description": "We will start with a massage on the whole leg, we will work with gentle pressure, with little drainage, emptying, then we will accompany it with a special summer ritual, with an essential oil. The chemotyped essential oil of Rosemary is the oil of the mind. Used in ancient Greece, with analgesic properties, muscle relaxants, draining and activating the circulation, finally we will make a bandage on the entire leg with a cold effect.",
+            "title": "Extensive Massage",
+            "description": "First, we will perform a complete leg massage, using light pressure and drainage techniques to release tension. Then, we will wrap you in a special summer ritual, using a refreshing lotion with natural ingredients. This lotion is designed to soothe and revitalize, providing muscle relief and improving circulation. We will finish with a cold bandage on the legs to maximize the relaxing effect.",
             "time": "60 minutes",
             "price": "60€"
         },
         "relaxing": {
             "title": "Relaxing Massage",
-            "description": "Experience immediate relief from the stress and tension built up in your body with our relaxing massage. Using specialised techniques, we will work on muscle tension points, releasing knots and restoring flexibility and balance to your body. This massage is ideal for those seeking relief from muscle tension.",
+            "description": "Enjoy a quick release of accumulated stress and tension with our relaxing massage. Using advanced methods, we target areas of muscle tension, unraveling knots and restoring flexibility and balance to your body. This treatment is perfect for those who need to relieve muscle tension.",
             "time": "60 minutes",
             "price": "60€"
         },
         "aromatheraphy": {
             "title": "Aromatheraphy",
-            "description": "Whether you wish to reduce stress, relieve muscle aches, improve sleep quality or simply pamper yourself, our aromatherapy massage will provide you with a holistic and personalised experience. Let us take you on a journey of relaxation and healing, where aromas and the expert hands of our therapist come together to provide you with an unforgettable experience of wellness and rejuvenation.",
+            "description": "If you need to relieve stress, reduce muscle aches, improve your sleep or simply pamper yourself, our aromatherapy massage is perfect for you. We will take you on a personalized experience of relaxation and recovery, where aromas and the expert touch of our therapists combine to offer you a moment of wellness and renewal that you won't forget.",
             "time": "60 minutes",
             "price": "60€"
         }
     },
     "space": {
         "title": "Our Space",
-        "description": "We are located at República do Salvador nº6, in the centre of Santiago de Compostela, in the Cowork+ centre. A spacious coworking which has an area of more than 300m2, and an area dedicated exclusively to relaxation.",
-        "description2": "At Compostela Massages we offer a wide variety and typology of massages adapted to your needs. Our specialities are: relaxing, therapeutic, descontracturantes massages and aesthetic treatments. We are committed to using leading brands from our immediate surroundings.",
+        "description": "In Lugar de masajes we offer a wide variety and typology of massages adapted to your needs. Our specialties are: relaxing massages, therapeutic, descontracturantes and aesthetic treatments. We are committed to using leading brands of our immediate environment.",
+        "description2": "In addition, Lugar de Masajes offers a relaxing space designed for your comfort. With quiet environments, soft music and a serene atmosphere, we invite you to disconnect from daily stress. Every corner is designed to provide you with a unique experience of well-being and peace.",
         "button": "Book your appointment"
     },
     "reviews": {
@@ -96,7 +95,7 @@
         "formPlaceholder": "Please give details of the date and time you would like to make an appointment.",
         "button": "Send",
         "location": "We are located in",
-        "address": "República del Salvador 6, Bajo, 15701, Santiago de Compostela, A Coruña"
+        "address": "Fake Street 123, Santiago de Compostela, A Coruña"
     },
     "modal": {
         "title": "Thank you for contacting us!",

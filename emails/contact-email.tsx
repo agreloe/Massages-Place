@@ -42,7 +42,7 @@ export const ContactEmail: React.FC<ContactEmailProps> = ({ name, email, message
             src={`https://ik.imagekit.io/masajescompostela/logo-mc-redisign.png`}
             width="64"
             height="64"
-            alt="Masajes Compostela"
+            alt="Lugar de masajes"
           />
           <Hr style={hr} />
           <Text style={paragraphUnderline}>
@@ -63,7 +63,7 @@ export const ContactEmail: React.FC<ContactEmailProps> = ({ name, email, message
 
 
 
-          <Text style={paragraph}>— Masajes Compostela</Text>
+          <Text style={paragraph}>— Lugar de masajes</Text>
           <Hr style={hr} />
           <Text style={footer}>
             Recibido desde masajescompostela.com

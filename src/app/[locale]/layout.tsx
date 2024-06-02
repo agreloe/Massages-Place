@@ -19,7 +19,7 @@ console.log(littleCat,font,signature);
 
 export const metadata = {
   generator: 'Next.js',
-  applicationName: 'Masajes Compostela',
+  applicationName: 'Lugar de masajes',
   referrer: 'origin-when-cross-origin',
   keywords: ['Masajes', 'Compostela', 'Camino', 'Descontracturante'],
   authors: [{ name: 'Erika Agrelo', url: 'https://agreloe.dev' }],
@@ -30,7 +30,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  title: 'Masajes Compostela',
+  title: 'Lugar de masajes',
   description: 'Masajes en Santiago de Compostela: un santuario de paz y rejuvenecimiento, perfecto para aliviar tensiones.',
   metadataBase: new URL('https://masajescompostela.com'),
   alternates: {
@@ -45,10 +45,10 @@ export const metadata = {
   },
   manifest: 'https://masajescompostela.com/manifest.json',
   openGraph: {
-    title: 'Masajes Compostela',
+    title: 'Lugar de masajes',
     description: 'Masajes en Santiago de Compostela: un santuario de paz y rejuvenecimiento, perfecto para aliviar tensiones.',
     url: 'https://masajescompostela.com',
-    siteName: 'Masajes Compostela',
+    siteName: 'Lugar de masajes',
     images: [
       {
         url: 'https://ik.imagekit.io/masajescompostela/masajes-compostela-meta-img.png', // Must be an absolute URL
@@ -59,7 +59,7 @@ export const metadata = {
         url: 'https://ik.imagekit.io/masajescompostela/masajes-compostela-meta-img.png', // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: 'Logo de Masajes Compostela',
+        alt: 'Logo de Lugar de masajes',
       },
     ],
     locale: 'es',
@@ -91,7 +91,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Masajes Compostela',
+    title: 'Lugar de masajes',
     description: 'Masajes en Santiago de Compostela: un santuario de paz y rejuvenecimiento, perfecto para aliviar tensiones.',
     images: ['https://ik.imagekit.io/masajescompostela/masajes-compostela-meta-img.png'],
   },

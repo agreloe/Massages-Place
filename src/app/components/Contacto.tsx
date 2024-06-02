@@ -174,7 +174,7 @@ const Contacto: React.FC = () => {
             <p>
               {t('disclaimerText')}{" "}
               <a
-                href="https://api.whatsapp.com/send/?phone=34691771284&text=Hola%2C+quisiera+pedir+una+cita+para+Masajes+Compostela&type=phone_number&app_absent=0"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
@@ -183,7 +183,7 @@ const Contacto: React.FC = () => {
               </a>
               ,{" "}
               <a
-                href="mailto:reservasmasajescompostela@gmail.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
@@ -192,7 +192,7 @@ const Contacto: React.FC = () => {
               </a>{" "}
               o{" "}
               <a
-                href="tel:691771284"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
@@ -212,7 +212,7 @@ const Contacto: React.FC = () => {
               {t('location')}{" "}
               <a
                 className="underline"
-                href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd2eff2244657055:0x559aeaeb76d17d71?sa=X&ved=1t:8290&ictx=111"
+                href="#"
                 rel="noopener noreferrer"
                 target="_blank"
               >

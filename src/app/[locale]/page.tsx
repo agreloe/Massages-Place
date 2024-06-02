@@ -86,7 +86,7 @@ const Home: React.FC = () => {
           </button>
           <p className='text-h5'>{t('title')}</p>
           <p>{t('description')}</p>
-          <p>{t('description2')}{" "}<a className='underline' href='https://api.whatsapp.com/send/?phone=34691771284&text=Hola%2C+quisiera+pedir+una+cita+para+un+masaje&type=phone_number&app_absent=0' target='_blank' rel="noopener noreferrer">WhatsApp</a></p>
+          <p>{t('description2')}{" "}<a className='underline' href='#' target='_blank' rel="noopener noreferrer">WhatsApp</a></p>
         </div>
       </div>
 

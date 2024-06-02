@@ -6,6 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {useTranslations} from 'next-intl';
 import useIsomorphicLayoutEffect from '@/utils/useIsomorphicLayoutEffect';
 import Worker from 'worker-loader!../workers/animationWorker';
+import ImageSwitcher from '@/app/components/ImageSwitcher';
+import quiropratico from '@/app/assets/webp/quiropractico.webp'
+import profundo from '@/app/assets/webp/profundo.webp'
+import descontracturante from '@/app/assets/webp/descontracturante.webp'
+import compostela from '@/app/assets/webp/compostela.webp'
+
 
 const Espacio: React.FC = () => {
     const t = useTranslations('space');
@@ -14,6 +20,13 @@ const Espacio: React.FC = () => {
   const tl = useRef()
   gsap.registerPlugin(ScrollTrigger);
   const worker = useRef<Worker | null>(null);
+
+  const images = [
+    quiropratico,
+    profundo,
+    descontracturante,
+    compostela,
+  ]
 
   useIsomorphicLayoutEffect(()=>{
     const handleAnimation = () => {
@@ -96,7 +109,8 @@ const Espacio: React.FC = () => {
         <div className='content w-[40%] sm:w-full sm:order-2'>
             <div className="arc-wrapper">
                 <div className='arc'>
-                    <Image src={espacio} alt='Foto de la cabina de masajes' width={0} height={0} sizes='100vw' placeholder="blur" className='w-full h-full object-cover'></Image>
+                  <ImageSwitcher></ImageSwitcher>
+                    {/* <Image src={espacio} alt='Foto de la cabina de masajes' width={0} height={0} sizes='100vw' placeholder="blur" className='w-full h-full object-cover'></Image> */}
                 </div>
             </div>
 
@@ -108,7 +122,7 @@ const Espacio: React.FC = () => {
             <h2 className='pb-8 sm:text-center'>{t('title')} <span className="text-2xl px-2 sm:text-center sm:block">&#10022;</span></h2>
             <p className='pb-4'>{t('description')}</p>
             <p>{t('description2')}</p>
-            <a href='https://api.whatsapp.com/send/?phone=34691771284&text=Hola%2C+quisiera+pedir+una+cita+para+Masajes+Compostela&type=phone_number&app_absent=0' target='_blank' rel='noopener noreferrer' className='mt-8 p-2 px-6 border border-solid border-text_color outline outline-transparent hover:outline-text_color hover:outline-offset-4 w-fit outline-1 transition-all ease-in-expo block sm:mx-auto'>{t('button')}</a>
+            <a href='#' target='_blank' rel='noopener noreferrer' className='mt-8 p-2 px-6 border border-solid border-text_color outline outline-transparent hover:outline-text_color hover:outline-offset-4 w-fit outline-1 transition-all ease-in-expo block sm:mx-auto'>{t('button')}</a>
         </div>
 
 

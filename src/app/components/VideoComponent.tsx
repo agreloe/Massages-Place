@@ -88,7 +88,7 @@ const VideoComponent: React.FC = () => {
       </picture>
 
         <video ref={videoElementRef} className='arc-video sm:hidden sm:w-full sm:h-auto' autoPlay loop muted>
-        <source src="/video-portada-mc.webm" type="video/webm" />
+        <source src="/video-lugar-massage.webm" type="video/webm" />
         </video>
       </div>
         </div>

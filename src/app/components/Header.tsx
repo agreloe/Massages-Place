@@ -99,7 +99,7 @@ const Header: React.FC = () => {
           <button type="button" onClick={handleRefresh} className="z-[100]">
             <span className="sr-only">Pagina de Inicio</span>
             <Link href="/">
-              <Image src={logoImg} alt="Logo de Masajes Compostela" width={90} height={90}></Image>
+              <Image src={logoImg} alt="Logo de lugar de masajes" width={90} height={90}></Image>
             </Link>
           </button>
           <button

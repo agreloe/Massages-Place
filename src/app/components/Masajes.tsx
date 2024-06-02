@@ -1,14 +1,14 @@
 import React, { useRef } from 'react';
 import Tabs from '@/app/components/Tabs';
-import relajante from '@/app/assets/webp/relajante.webp'
-import quiropratico from '@/app/assets/webp/quiropractico.webp'
-import profundo from '@/app/assets/webp/profundo.webp'
-import descontracturante from '@/app/assets/webp/descontracturante.webp'
-import compostela from '@/app/assets/webp/compostela.webp'
-import deluxe from '@/app/assets/webp/deluxe.webp'
-import piernascansadas from '@/app/assets/webp/piernas-cansadas.webp'
-import aromaterapia from '@/app/assets/webp/aromaterapia.webp'
-import regenerativo from '@/app/assets/webp/regenerativo.webp'
+import relajante from '@/app/assets/webp/Postre-Matuca-15.webp'
+import quiropratico from '@/app/assets/webp/Postre-Matuca-16.webp'
+import profundo from '@/app/assets/webp/Postre-Matuca-17.webp'
+import descontracturante from '@/app/assets/webp/Postre-Matuca-18.webp'
+import compostela from '@/app/assets/webp/Postre-Matuca-19.webp'
+import deluxe from '@/app/assets/webp/Postre-Matuca-20.webp'
+import piernascansadas from '@/app/assets/webp/Postre-Matuca-21.webp'
+import aromaterapia from '@/app/assets/webp/Postre-Matuca-22.webp'
+import regenerativo from '@/app/assets/webp/Postre-Matuca-23.webp'
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

@@ -31,6 +31,59 @@ const Reviews: React.FC<ReviewsProps> = ({
   gsap.registerPlugin(ScrollTrigger);
   const [reviews, setReviews] = useState<Review[]>([]);
 
+  const fakeReviews = [
+    {
+      "author_name": "John Doe",
+      "author_url": "https://www.google.com/maps/contrib/123456789012345678901/reviews",
+      "language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/1234567890abcdefg",
+      "rating": 5,
+      "relative_time_description": "a month ago",
+      "text": "Absolutely wonderful experience! The massage was incredibly relaxing and the staff was very professional. I'll definitely be coming back!",
+      "time": 1609459200
+  },
+    {
+      "author_name": "Jane Gardner",
+      "author_url": "https://www.google.com/maps/contrib/123456789012345678901/reviews",
+      "language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/1234567890abcdefg",
+      "rating": 5,
+      "relative_time_description": "a month ago",
+      "text": "Best massage I've ever had! The ambiance was soothing, and the therapist was very skilled. Left feeling rejuvenated and stress-free. Highly recommend!",
+      "time": 1609459200
+  },
+    {
+      "author_name": "William Smith",
+      "author_url": "https://www.google.com/maps/contrib/123456789012345678901/reviews",
+      "language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/1234567890abcdefg",
+      "rating": 5,
+      "relative_time_description": "a month ago",
+      "text": "Fantastic service and atmosphere! The massage was perfect, targeting all my sore spots. The staff is friendly and attentive. Can't wait for my next session!",
+      "time": 1609459200
+  },
+    {
+      "author_name": "Gary Wallace",
+      "author_url": "https://www.google.com/maps/contrib/123456789012345678901/reviews",
+      "language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/1234567890abcdefg",
+      "rating": 5,
+      "relative_time_description": "a month ago",
+      "text": "An oasis of relaxation! The massage therapist was amazing, easing all my tension. Clean and serene environment. Five stars well-deserved!",
+      "time": 1609459200
+  },
+    {
+      "author_name": "Jeffrey Lee",
+      "author_url": "https://www.google.com/maps/contrib/123456789012345678901/reviews",
+      "language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/1234567890abcdefg",
+      "rating": 5,
+      "relative_time_description": "a month ago",
+      "text": "Exceeded my expectations! The massage was just what I needed after a stressful week. Professional and welcoming staff. Highly recommend this place!",
+      "time": 1609459200
+  },
+  ]
+
   /* useGSAP(() => {
     //@ts-ignore
     const reviewsAnim = gsap
@@ -78,7 +131,7 @@ const Reviews: React.FC<ReviewsProps> = ({
     worker.current.onmessage = (event: MessageEvent) => {
       const message = event.data;
       if (message.type === 'REVIEWS_RESULT') {
-        setReviews(message.payload);
+        setReviews(fakeReviews);
       }
     };
 
